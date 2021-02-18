@@ -25,7 +25,7 @@ minimal_mistakes_skin: default
 search: true
 locale: "en-US"
 breadcrumbs: true
-repository:JiaruiFeng/JiaruiFeng.github.io
+repository: JiaruiFeng/JiaruiFeng.github.io
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
@@ -109,7 +109,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-      
+
+atom_feed:
+  hide: true
+
 comments:
   provider: "utterances"
   utterances:
