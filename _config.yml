@@ -14,14 +14,18 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Jiarui Feng
-email:
+masthead_title: Jiarui Feng
+title_separator: "|"
+email: feng.jiarui@wustl.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Jiarui Feng presonal website.
 twitter_username: username
 github_username: JiaruiFeng
 minimal_mistakes_skin: default
 search: true
-
+locale: "en-US"
+breadcrumbs: true
+repository:JiaruiFeng/JiaruiFeng.github.io
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
@@ -61,6 +65,7 @@ author:
   bio    : "Master student in Washington University in St.Louis"
   location : "St.Louis, MO"
   links:
+    -label: "feng.jiarui@wustl.edu"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/JiaruiFeng"
@@ -91,8 +96,9 @@ defaults:
       type: posts
     values:
       layout: single
+      show_date: true
       author_profile: true
-      read_time: true
+      read_time: false
       comments: true
       share: true
       related: true
@@ -103,6 +109,12 @@ defaults:
     values:
       layout: single
       author_profile: true
+      
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light" # "github-dark"
+    issue_term: "pathname"
 
 category_archive:
   type: liquid
