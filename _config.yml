@@ -13,12 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Jiarui Feng Personal Website
+title: Jiarui Feng
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+Jiarui Feng presonal website
 twitter_username: username
 github_username: JiaruiFeng
 minimal_mistakes_skin: default
@@ -61,13 +59,14 @@ author:
   name   : "Jiarui Feng"
   avatar : "/assets/images/profile.jpeg"
   bio    : "Master student in Washington University in St.Louis"
+  location : "St.Louis, MO"
   links:
-    - label: "Google Scholar"
-      icon: "fas fa-fw fa-google"
-      url: "https://scholar.google.com/citations?user=6CSGUR8AAAAJ&hl=zh-CN"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://www.google.com/"
+      url: "https://github.com/JiaruiFeng"
+    - label: "Google Scholar"
+      icon: "fab fa-google"
+      url: "https://scholar.google.com/citations?user=6CSGUR8AAAAJ&hl=zh-CN"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/jiarui-feng-94ba7a189/"
@@ -78,6 +77,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/JiaruiFeng"
+    - label: "Google Scholar"
+      icon: "fab fa-google"
+      url: "https://scholar.google.com/citations?user=6CSGUR8AAAAJ&hl=zh-CN"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/jiarui-feng-94ba7a189/"
