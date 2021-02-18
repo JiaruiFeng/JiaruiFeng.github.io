@@ -62,10 +62,12 @@ plugins:
 author:
   name   : "Jiarui Feng"
   avatar : "/assets/images/profile.jpeg"
-  bio    : "Master student in Washington University in St.Louis"
+  bio    : "Master student in Washington University in St.Louis.
+            feng.jiarui@wustl.edu"
   location : "St.Louis, MO"
   links:
     - label: "feng.jiarui@wustl.edu"
+      icon: "far fa-envelope"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/JiaruiFeng"
@@ -112,6 +114,7 @@ defaults:
 
 atom_feed:
   hide: true
+og_image: /assets/images/profile.jpeg
 
 comments:
   provider: "utterances"
