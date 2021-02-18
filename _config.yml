@@ -65,7 +65,7 @@ author:
   bio    : "Master student in Washington University in St.Louis"
   location : "St.Louis, MO"
   links:
-    -label: "feng.jiarui@wustl.edu"
+    - label: "feng.jiarui@wustl.edu"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/JiaruiFeng"
