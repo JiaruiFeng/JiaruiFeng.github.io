@@ -57,12 +57,14 @@ $$
 In the right chart, we can see a boundary when target complexity equal to 10. This because that, when the ture function form is close to the hypothesis sets form, we stand a better chance to learn it.
 
 Stochastic noise refer to what we cannot decide and learn from the data, deterministic noise refer to the error we use a simple model to measure a much more complex question. Remeber the bias-variance decomposition, we have:
+
+
 $$
 \mathbb{E}_{\mathcal{D}}\left[E_{\text {out }}\right]=\sigma^{2}+\text { bias }+\text { var }
 $$
+
+
 The bias is actually deterministic noise and $\sigma^2$ is stochastic noise.
-
-
 
 Typically, there are two way to fight overfitting: **regularization** and **validation**.
 
