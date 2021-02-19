@@ -49,9 +49,9 @@ The rescue to this dilemma is probability. Consider this example:
 we have a bin which contains red and green marbles. the real ratio of red marbles is denoted by $\mu$. we randomly pick marble from bin with replacement, the ratio of red marbles in our selected samples is $\nu$. What does value of $\nu$ tell us about $\mu$ ? We can use *Hoeffding Inequality*. It states that for any sample size $N$,
 
 
-$$
-\mathbb{P}[|\nu-\mu|>\epsilon] \leq 2 e^{-2 \epsilon^{2} N} \quad \text { for any } \epsilon>0
-$$
+
+$$\mathbb{P}[|\nu-\mu|>\epsilon] \leq 2 e^{-2 \epsilon^{2} N} \quad \text { for any } \epsilon>0$$
+
 
 
 Notice that only the size of the samples affects the bound, not the size of the bin. If $N$ is big enough, we can use $\nu$ as an estimate of $\mu$ , this is called **probably approximately correct**(PAC learning).
