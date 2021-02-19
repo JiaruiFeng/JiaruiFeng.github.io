@@ -123,7 +123,7 @@ $$
 $$
 
 
-Let $\mathcal{B}_{i}$ denote the bad event of $h_{i}$ , that is $\left|E_{\mathrm{in}}(h_{i})-E_{\mathrm{out}}(h_{i})\right|>\epsilon$ , We have:
+
 
 
 $$
