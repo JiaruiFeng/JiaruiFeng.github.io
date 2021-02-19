@@ -1,7 +1,7 @@
 ---
 title: "Blogs"
 permalink: /blogs/
-layout: collection
-entries_layout: grid
+layout: categories
+author_profile:true
 ---
 
