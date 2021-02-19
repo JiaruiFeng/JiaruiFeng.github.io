@@ -86,13 +86,13 @@ $$
 
 
 
-This is bayesian estimation. However, in reality, in order to compute the $E[y|x,D]$, we need consider all possible $\theta$, which is time consuming. 
+This is bayesian estimation. However, in reality, in order to compute the $E[y\lvert x,D]$, we need consider all possible $\theta$, which is time consuming. 
 
 
 
 ### 3. Maximum Posterior Probability Estimation(MAP)
 
-Notice that in bayesian esitmation, $p(D)$ would not infulence estimation of $p(\theta|D)$. Thus, the estimation of $\theta$ can be written as:
+Notice that in bayesian esitmation, $p(D)$ would not infulence estimation of $p(\theta\lvert D)$. Thus, the estimation of $\theta$ can be written as:
 
 
 $$
