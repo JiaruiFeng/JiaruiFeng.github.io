@@ -30,7 +30,7 @@ repository: JiaruiFeng/JiaruiFeng.github.io
 markdown: kramdown
 kramdown: 
   math_engine: mathjax
-  
+
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
@@ -41,8 +41,6 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 include:
   - _pages
 
-head_scripts:
-  - https://cdn.mathjax.org/mathjax/latest/MathJax.js
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
