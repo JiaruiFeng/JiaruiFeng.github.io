@@ -5,7 +5,7 @@
 [![Linkedin Badge](https://img.shields.io/badge/-JiaruiFeng-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jiarui-feng-94ba7a189/)](https://www.linkedin.com/in/jiarui-feng-94ba7a189/) 
 [![Gmail Badge](https://img.shields.io/badge/-feng.jiarui@wustl.edu-c14438?style=flat-square&logo=Gmail&logoColor=white&link=feng.jiarui@wustl.edu)](feng.jiarui@wustl.edu)
 
-I am from china and I am currently master student in Washington University in St.Louis.
+I am from china and I am currently a master student in Washington University in St.Louis.
 ## 👯 Research
 * Meachin learning
 * Deep learning
