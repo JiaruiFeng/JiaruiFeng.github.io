@@ -44,7 +44,7 @@ E_{o u t}\left(g^{(D)}\right)=\mathbb{E}_{\bar{x}}\left[\left(g^{(D)}(\vec{x})-f
 $$
 
 
-let $\bar{g}(\vec{x})=\mathbb{E}_{D}\left[g^{(D)}(\vec{x})\right]$, then we can compute $\mathbb{E}_{D}\left[E_{\text {out}}\left(g^{(D)}\right)\right]$:
+let $\bar{g}(\vec{x})=\mathbb{E}_{D}[g^{(D)}(\vec{x})]$, then we can compute $\mathbb{E}_{D}[E_{\text {out}}\left(g^{(D)}\right)]$:
 
 
 $$
