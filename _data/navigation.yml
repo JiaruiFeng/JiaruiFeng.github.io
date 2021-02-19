@@ -3,5 +3,7 @@ main:
     url: /publications/
   - title: "Projects and Softwares"
     url: /projects/
+  - title: "Blogs"
+    url: /blogs/
   - title: "CV"
     url: /CV/

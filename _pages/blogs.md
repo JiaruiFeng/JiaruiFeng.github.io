@@ -1,6 +1,6 @@
 ---
 title: "Blogs"
-permalink: /Blogs/
+permalink: /blogs/
 layout: collection
 entries_layout: grid
 ---
