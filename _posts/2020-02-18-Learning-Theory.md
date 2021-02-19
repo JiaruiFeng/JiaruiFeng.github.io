@@ -8,7 +8,7 @@ tags:
 
 ## 1.Learning Setup
 
-![image-20200128000702372](../assets/images/image-20200128000702372.png)
+![image-20200128000702372](/assets/images/image-20200128000702372.png)
 
 $f$ is unknown function that we want to know. $\mathcal{H}$ is the hypothesis set. $\mathcal{H}$ contains all the posible function $h$ that can be used to  approximate the unknown function. $\mathcal{g}$ is the final hypothesis we choose to approximate the unknown function.
 
@@ -22,7 +22,7 @@ Consider we have dataset $\mathcal{D}$, we can find a hypothesis $g$ have very g
 
 The rescue to this dilemma is probability. Consider this example:
 
-![image-20200128004216398](../assets/images/image-20200128004216398.png)
+![image-20200128004216398](/assets/images/image-20200128004216398.png)
 
 we have a bin which contains red and green marbles. the real ratio of red marbles is denoted by $\mu$. we randomly pick marble from bin with replacement, the ratio of red marbles in our selected samples is $\nu$. What does value of $\nu$ tell us about $\mu$ ? We can use *Hoeffding Inequality*. It states that for any sample size $N$,
 $$
