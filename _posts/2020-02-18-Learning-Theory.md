@@ -26,7 +26,7 @@ The rescue to this dilemma is probability. Consider this example:
 
 ![image-20200128004216398](/assets/images/image-20200128004216398.png)
 
-we have a bin which contains red and green marbles. the real ratio of red marbles is denoted by $\mu$. we randomly pick marble from bin with replacement, the ratio of red marbles in our selected samples is $\nu$. What does value of $\nu$ tell us about $\mu$ ? We can use *Hoeffding Inequality*. It states that for any sample size $N$,
+we have a bin which contains red and green marbles. the real ratio of red marbles is denoted by $\mu$. we randomly pick marble from bin with replacement, the ratio of red marbles in our selected samples is $\nu$. What does value of $\nu$ tell us about $\mu$ ? We can use *Hoeffding Inequality*. It states that for any sample size $N$: 
 
 
 
