@@ -17,7 +17,7 @@ Basically, In the field of machine learning, given the dataset $D=\{X,Y\}$ and p
 
 ### 1. Maximum Likelihood Estimation(MLE)
 
-The maximum likelihood estimator is defined by conditional density $f_{Y|X}(y|x)$, the Formula is follow:
+The maximum likelihood estimator is defined by conditional density $f_{Y\lvert X}(y\lvert x)$, the Formula is follow:
 
 
 $$
