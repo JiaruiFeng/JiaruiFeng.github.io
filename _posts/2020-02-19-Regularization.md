@@ -5,9 +5,6 @@ categories:
 tags:
   - Learning note
 classes: wide
-
-
-
 ---
 
 
