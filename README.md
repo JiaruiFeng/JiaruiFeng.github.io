@@ -1,27 +1,29 @@
-# Minimal Mistakes remote theme starter
+<h2> Hello, I am Jiarui Feng ! <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px"></h2>
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+<img align='right' src='https://user-images.githubusercontent.com/5713670/87202985-820dcb80-c2b6-11ea-9f56-7ec461c497c3.gif' width='200"'>
 
-Contains basic configuration to get you a site with:
+[![Linkedin Badge](https://img.shields.io/badge/-JiaruiFeng-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jiarui-feng-94ba7a189/)](https://www.linkedin.com/in/jiarui-feng-94ba7a189/) 
+[![Gmail Badge](https://img.shields.io/badge/-feng.jiarui@wustl.edu-c14438?style=flat-square&logo=Gmail&logoColor=white&link=feng.jiarui@wustl.edu)](feng.jiarui@wustl.edu)
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+I am from china and I am currently master student in Washington University in St.Louis.
+## 👯 Research
+* Meachin learning
+* Deep learning
+* Data Mining
+* Graph Nerual Network
+* Healthcare and bioinformatics
+* Natural Language Processing
+## ⚡ Coding
+- Python
+- Pytorch
+- Java
+- R
+- Shiny
+- 
+## Hello World!! 🤔
+- Crazy computer gamer: Overwatch, World of warcraft, PUBG, CS:GO...
+- 📫 Look through my website: [Jiarui Feng](https://jiaruifeng.github.io).
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+![Jiarui's github stats](https://github-readme-stats.vercel.app/api?username=JiaruiFeng&hide=["issues"]&show_icons=true)
 
----
-
-## Troubleshooting
-
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
-
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+![visitors](https://visitor-badge.glitch.me/badge?page_id=harshkumarkhatri.harshkumarkhatri)
