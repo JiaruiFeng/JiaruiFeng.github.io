@@ -43,48 +43,76 @@ There is an important assumption make this inequality establish: samples are ran
 ## 3. Connect to Learning
 
 We can also apply Hoeffding Inequality to the learning problem, which allow us to make a prediction outside $\mathcal{D}$. We define *in-sample error* of $h$ as:
+
+
 $$
 \begin{aligned}
 E_{\mathrm{in}}(h) &=\text { (fraction of } \mathcal{D} \text { where } f \text { and } h \text { disagree }) \\
 &=\frac{1}{N} \sum_{n=1}^{N}\left[h\left(\mathbf{x}_{n}\right) \neq f\left(\mathbf{x}_{n}\right)\right]
 \end{aligned}
 $$
+
+
 *out-sample-error* of $h$ as:
+
+
 $$
 E_{\mathrm{out}}(h)=\mathbb{P}[h(\mathbf{x}) \neq f(\mathbf{x})]
 $$
+
+
 where $[statement]$ =1 if statement is true.
 
 Substitute new notation $E_{in}$ for $\nu$ and $E_{out}$ for $\mu$, the Hoeffding Inequality  can be written as:
+
+
 $$
 \mathbb{P}\left[\left|E_{\mathrm{in}}(h)-E_{\mathrm{out}}(h)\right|>\epsilon\right] \leq 2 e^{-2 \epsilon^{2} N} \quad \text { for any } \epsilon>0
 $$
+
+
 Where $N$ is number of training samples. And we have:
+
+
 $$
 \delta \leqslant 2 e^{-2 \varepsilon^{2} N}
 $$
+
 
 $$
 \varepsilon \leq \sqrt{\frac{1}{2N} \ln \frac{2}{\delta}}
 $$
 
+
 $$
 \text { with prob at least } 1-\delta, E_{out}(h) \leqslant E_{\text {in }}(h)+\sqrt{\frac{1}{2N} \ln \frac{2}{\delta}}
 $$
+
+
 
 ## 4. Connect to Real Learning 
 
 **Verification verus Learning**: If we fix a $h$ before we see the data, and use data to test this $h$, this is verification. Learning is, given $H=\left\{h_{1},h_{2},...,h_{m}\right\}$, algorithm find a $g \in H$ to approximate $f$.
 
 Now, Consider real learning. Given $H=\left\{h_{1},h_{2},...,h_{m}\right\}$, algorithm find a $g \in H$, for example, $g$ minimize $E_{in}(h)$. can we apply Hoeffding Inequality on $g$? ----------No. Because, the assumption that $h$ is fixed before you generate the data set is not held anymore. The statement we would like to make is not:
+
+
 $$
 ^{\mathfrak{u}} \mathbb{P}\left[\left|E_{\mathrm{in}}\left(h_{m}\right)-E_{\mathrm{out}}\left(h_{m}\right)\right|>\epsilon\right] \text { is small }^{\prime \prime}
 $$
+
+
 But rather:
+
+
 $$
 \mathbb{P}\left[\left|E_{\mathrm{in}}(g)-E_{\mathrm{out}}(g)\right|>\epsilon\right] \text { is small" for the final hypothesis } g
 $$
-However, there is a simple way to get around this. Notice that $g$ must be one of $h_{m}$ in hypothesis sets $\mathcal{H}$. 
+
+
+However, there is a simple way to get around this. Notice that $g$ must be one of $h_{m}$ in hypothesis sets $\mathcal{H}$:
+
+
 $$
 \begin{aligned}
 \left|E_{\mathrm{in}}(g)-E_{\mathrm{out}}(g)\right|>\epsilon \Longrightarrow &\left|E_{\mathrm{in}}\left(h_{1}\right)-E_{\mathrm{out}}\left(h_{1}\right)\right|>\epsilon \\
@@ -93,11 +121,19 @@ $$
 & \text { or }\left|E_{\mathrm{in}}\left(h_{M}\right)-E_{\mathrm{out}}\left(h_{M}\right)\right|>\epsilon^{\prime}
 \end{aligned}
 $$
+
+
 Let $\mathcal{B}_{i}$ denote the bad event of $h_{i}$, that is $\left|E_{\mathrm{in}}(h_{i})-E_{\mathrm{out}}(h_{i})\right|>\epsilon$. We have:
+
+
 $$
 \mathbb{P}\left[\mathcal{B}_{1} \text { or } \mathcal{B}_{2} \text { or } \cdots \text { or } \mathcal{B}_{M}\right] \leq \mathbb{P}\left[\mathcal{B}_{1}\right]+\mathbb{P}\left[\mathcal{B}_{2}\right]+\cdots+\mathbb{P}\left[\mathcal{B}_{M}\right]
 $$
+
+
 Then, we can get the loose bound of $g$:
+
+
 $$
 \begin{aligned}
 \mathbb{P}\left[\left|E_{\mathrm{in}}(g)-E_{\mathrm{out}}(g)\right|>\epsilon\right] \leq & \mathbb{P}\left[\quad\left|E_{\mathrm{in}}\left(h_{1}\right)-E_{\mathrm{out}}\left(h_{1}\right)\right|>\epsilon\right.\\
@@ -107,12 +143,17 @@ $$
 \leq & \sum_{m=1}^{M} \mathbb{P}\left[\left|E_{\mathrm{in}}\left(h_{m}\right)-E_{\mathrm{out}}\left(h_{m}\right)\right|>\epsilon\right]
 \end{aligned}
 $$
+
+
 Apply Hoeffding inequality:
+
 
 
 $$
 \mathbb{P}\left[\left|E_{\mathrm{in}}(g)-E_{\mathrm{out}}(g)\right|>\epsilon\right] \leq 2 M e^{-2 \epsilon^{2} N}
 $$
+
+
 **The complexity of $\mathcal{H}$**: In above of inequality, we can see that $M$ is a parameter we cannot define. when $M$ goes up,  we run more risk that $E_{in}(g)$ will be a poor estimator of $E_{out}(g)$. There, $M$ can be seen as a measure of the "complexity" of the hypothesis set $\mathcal{H}$ that we use. However, if we want to make sure $E_{in}(g)$ is small enough, we stand a better chance when $\mathcal{H}$ is more complex. a more complex $\mathcal{H}$ give us more flexibility in finding some $g$ that fit the data well. This is a trade off.
 
 ![image-20200128104427126](/assets/images/image-20200128104427126.png)
@@ -122,17 +163,23 @@ $$
 ### Error Measure
 
 To quantify how well $g$ approximates $f$, we need to define an error measure that quantifies how far we are from target. Most of time, we define pair-wise error function:
+
+
 $$
 Error=e(h(x), f(x))
 $$
+
 
 $$
 E_{in}(h)=\frac{1}{N} \sum_{n=1}^{N}e(h(x),f(x))
 $$
 
+
 $$
 E_{out}(h)=E[e(h(x),f(x))]
 $$
+
+
 
 How do we choose error function:
 
