@@ -92,9 +92,9 @@ $$
 
 ## 4. Connect to Real Learning 
 
-**Verification verus Learning**: If we fix a $h$ before we see the data, and use data to test this $h$, this is verification. Learning is, given $H=\left\{h_{1},h_{2},...,h_{m}\right\}$, algorithm find a $g \in H$ to approximate $f$.
+**Verification verus Learning**: If we fix a $h$ before we see the data, and use data to test this $h$, this is verification. Learning is, given $H=\{h_{1},h_{2},...,h_{m}\}$, algorithm find a $g \in H$ to approximate $f$.
 
-Now, Consider real learning. Given $H=\left\{h_{1},h_{2},...,h_{m}\right\}$, algorithm find a $g \in H$, for example, $g$ minimize $E_{in}(h)$. can we apply Hoeffding Inequality on $g$? ----------No. Because, the assumption that $h$ is fixed before you generate the data set is not held anymore. The statement we would like to make is not:
+Now, Consider real learning. Given $H=\{h_{1},h_{2},...,h_{m}\}$, algorithm find a $g \in H$, for example, $g$ minimize $E_{in}(h)$. can we apply Hoeffding Inequality on $g$? ----------No. Because, the assumption that $h$ is fixed before you generate the data set is not held anymore. The statement we would like to make is not:
 
 
 $$
@@ -123,7 +123,7 @@ $$
 $$
 
 
-Let $ \mathcal{B}_{i} $ denote the bad event of $f$, 
+Let $ \mathcal{B}_i $ denote the bad event of $ h_i $, 
 
 
 $$
