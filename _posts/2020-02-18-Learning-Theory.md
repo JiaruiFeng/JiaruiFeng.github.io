@@ -109,7 +109,7 @@ $$
 $$
 **The complexity of $\mathcal{H}$**: In above of inequality, we can see that $M$ is a parameter we cannot define. when $M$ goes up,  we run more risk that $E_{in}(g)$ will be a poor estimator of $E_{out}(g)$. There, $M$ can be seen as a measure of the "complexity" of the hypothesis set $\mathcal{H}$ that we use. However, if we want to make sure $E_{in}(g)$ is small enough, we stand a better chance when $\mathcal{H}$ is more complex. a more complex $\mathcal{H}$ give us more flexibility in finding some $g$ that fit the data well. This is a trade off.
 
-![image-20200128104427126](../assets/images/image-20200128104427126.png)
+![image-20200128104427126](/assets/images/image-20200128104427126.png)
 
 ## 5.Error and Noise
 
