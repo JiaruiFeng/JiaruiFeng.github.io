@@ -38,7 +38,7 @@ E_{o u t}(g)=E_{\vec{x}}[e(g(\vec{x}), y)]
 $$
 
 
-Where $\vec{x}$ should be out of sample. Typically, we would reserve $K$ data points used to estimate $E_{out}$, those data points cannot be involved in training:$D=D_{\text {train}} \cup D_{\text {test}}$.  Let test dataset be $D_{\text {test}}=\left\{\left(\vec{x}_{1}, y_{1}\right), \ldots,\left(\vec{x}_{K}, y_{K}\right)\right\}$, and $g^-$ be the hypothesis we learned use $ D_{train}$, We can calculate $E_{test}(g)$:
+Where $\vec{x}$ should be out of sample. Typically, we would reserve $K$ data points used to estimate $E_{out}$, those data points cannot be involved in training:$D=D_{\text {train}} \cup D_{\text {test}}$.  Let test dataset be $$D_{\text {test}}=\left\{\left(\vec{x}_{1}, y_{1}\right), \ldots,\left(\vec{x}_{K}, y_{K}\right)\right\}$$, and $g^-$ be the hypothesis we learned use $$ D_{train}$$, We can calculate $$E_{test}(g)$$:
 
 
 $$
@@ -78,17 +78,17 @@ E_{\mathrm{out}}(g) \leq E_{\mathrm{out}}\left(g^{-}\right) \leq E_{\mathrm{val}
 $$
 
 
-where $g$ is hypothesis learned by $D$. Meanwhile, since $D_{val}$ is actually subset of $D$, we have $\mathbb{E}\left[E_{v a l}\left(g_{m^{*}}^{-}\right)\right] \leq E_{\text {out}}\left(g_{m^{*}}^{-}\right)$ , where $g_{m^{*}}^{-}$a hypothesis we would explain in the next part.
+where $g$ is hypothesis learned by $D$. Meanwhile, since $D_{val}$ is actually subset of $D$, we have $$\mathbb{E}\left[E_{v a l}\left(g_{m^{*}}^{-}\right)\right] \leq E_{\text {out}}\left(g_{m^{*}}^{-}\right)$$, where $g_{m^{*}}^{-}$ is a hypothesis we would explain in the next part.
 
 <img src="/assets/images/image-20200223192438486.png" alt="image-20200223192438486" style="zoom:50%;" />
 
-Typcially, the relationship between $E_{\text {out}}\left(g_{m^{*}}^{-}\right)$ and $E_{v a l}\left(g_{m^{*}}^{-}\right)$ is illsutrated in above plot.  When $K$ become large,  $E_{v a l}\left(g_{m^{*}}^{-}\right)$ would quickly approach to  $E_{\text {out}}\left(g_{m^{*}}^{-}\right)$.
+Typcially, the relationship between $$E_{\text {out}}\left(g_{m^{*}}^{-}\right)$$ and $$E_{v a l}\left(g_{m^{*}}^{-}\right)$$ is illsutrated in above plot.  When $K$ become large,  $$E_{v a l}\left(g_{m^{*}}^{-}\right)$$ would quickly approach to  $$E_{\text {out}}\left(g_{m^{*}}^{-}\right)$$.
 
 
 
-When we use $D_{val}$ to do the validation, let $\mathcal{H}_{1}, \ldots, \mathcal{H}_{M}$ be the model we want to validate. Use the $D_{train}$ to train a $g^-_{m}$ for each model. Now, evaluate each model on the validation set to obtain the validation errors $E_{1}, \cdots, E_{M}$, where $E_{m}=E_{\mathrm{val}}\left(g_{m}^{-}\right) ; \quad m=1, \ldots, M$.
+When we use $D_{val}$ to do the validation, let $$\mathcal{H}_{1}, \ldots, \mathcal{H}_{M}$$ be the model we want to validate. Use the $D_{train}$ to train a $g^-_{m}$ for each model. Now, evaluate each model on the validation set to obtain the validation errors $$E_{1}, \cdots, E_{M}$$, where $$E_{m}=E_{\mathrm{val}}\left(g_{m}^{-}\right) ; \quad m=1, \ldots, M$$.
 
-Now, a simple initutituion is select the model with lowest $E_{val}(g^-_{m})$, denote as model $g^-_{m^*}$, $E_{v a l}\left(g_{m^{*}}^{-}\right) \leq E_{v a l}\left(g_{m}^{-}\right) \text {for all } m$.
+Now, a simple initutituion is select the model with lowest $$E_{val}(g^-_{m})$$, denote as model $$g^-_{m^*}$$, $$E_{v a l}\left(g_{m^{*}}^{-}\right) \leq E_{v a l}\left(g_{m}^{-}\right) \text {for all } m$$.
 
 What can we say about the generalization of validation?  Consider a new model $\mathcal{H}_{val}$ contain all the final hypotheses,
 
@@ -98,7 +98,7 @@ $$
 $$
 
 
-Model selection is actually use $D_{val}$ to choose one of $g^-_{m}$ based on "in sample error" $E_{val}(g^-_{m})$.  Thus, we actually have this:
+Model selection is actually use $D_{val}$ to choose one of $$g^-_{m}$$ based on "in sample error" $$E_{val}(g^-_{m})$$.  Thus, we actually have this:
 
 
 $$
