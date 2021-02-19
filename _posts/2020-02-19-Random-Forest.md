@@ -34,7 +34,7 @@ As a result, if we have weak learners that have high variance and low bias(oppoi
 
 Bootstrapping is a resampling technique which is principally used to estimate various measures of error or undcertainty of parameter estimates. The procedure of bootstrapping is follow:
 
-* let $D=\left\{\left(x_{1}, y_{1}\right), \ldots,\left(x_{N},  y_{N}\right)\right\}$ be the dataset we have, the number of $D$ is $N$
+* let $D={\left(x_{1}, y_{1}\right), \ldots,\left(x_{N},  y_{N}\right)}$ be the dataset we have, the number of $D$ is $N$
 * We repeatedly uniformly sample $N$ points from $D$ **with replacement**
 * The new dataset is called bootstrapping dataset.
 
@@ -104,7 +104,7 @@ v=\frac{n_{y=y^{*}}-n_{y=y_{\pi}^*}}{|o o b|}
 $$
 
 
-where $v$ is the importance for feature $i$ in weak learner $g_m$, $n_{y=y^{*}}$ is the number of sample that have correct prediction before we change the value of feature. $n_{y=y_{\pi}^*}$ is the number of sample that have correct prediction after we change the value of feature. $|oob|$ is the number of out-of-bag sample in this dataset. Finally, we can avarage $v$ to get final importance score.
+where $v$ is the importance for feature $i$ in weak learner $g_m$, $$n_{y=y^{*}}$$ is the number of sample that have correct prediction before we change the value of feature. $$n_{y=y_{\pi}^*}$$ is the number of sample that have correct prediction after we change the value of feature. $$\lvert oob\rvert $$ is the number of out-of-bag sample in this dataset. Finally, we can avarage $v$ to get final importance score.
 
 
 
