@@ -98,7 +98,7 @@ Now, Consider real learning. Given $H=\{h_{1},h_{2},...,h_{m}\}$, algorithm find
 
 
 $$
-^{\mathfrak{u}} \mathbb{P}\left[\left|E_{\mathrm{in}}\left(h_{m}\right)-E_{\mathrm{out}}\left(h_{m}\right)\right|>\epsilon\right] \text { is small }^{\prime \prime}
+\text{"} \mathbb{P}\left[\left|E_{\mathrm{in}}\left(h_{m}\right)-E_{\mathrm{out}}\left(h_{m}\right)\right|>\epsilon\right] \text { is small }\text{"}
 $$
 
 
@@ -106,7 +106,7 @@ But rather:
 
 
 $$
-\mathbb{P}\left[\left|E_{\mathrm{in}}(g)-E_{\mathrm{out}}(g)\right|>\epsilon\right] \text { is small" for the final hypothesis } g
+\text{"}\mathbb{P}\left[\left|E_{\mathrm{in}}(g)-E_{\mathrm{out}}(g)\right|>\epsilon\right] \text { is small" for the final hypothesis } g
 $$
 
 
@@ -123,7 +123,7 @@ $$
 $$
 
 
-Let $ \mathcal{B}_i $ denote the bad event of $ h_i $, 
+Let $ \mathcal{B}_i $ denote the bad event of $ h_i $, that is $ \left|E_{\mathrm{in}}(h_i)-E_{\mathrm{out}}(h_i)\right|>\epsilon $ , We have:
 
 
 $$
