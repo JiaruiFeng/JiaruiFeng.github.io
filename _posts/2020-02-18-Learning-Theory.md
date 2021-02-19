@@ -123,7 +123,7 @@ $$
 $$
 
 
-Let $\mathcal{B}_{i}$ 
+Let $\mathcal{B}_{i}$ denote the bad event of $h_{i}$,
 
 
 $$
