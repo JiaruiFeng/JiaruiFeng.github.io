@@ -1,8 +1,9 @@
 ---
 title: "Publications"
 layout: single
-permalink: /publication/
+permalink: /publications/
 author_profile: true
+classes: wide
 ---
 
 (Latest update: Feb 18,2021)
