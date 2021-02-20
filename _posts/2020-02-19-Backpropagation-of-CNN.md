@@ -31,16 +31,16 @@ In back propagation, we want to calculate gradient of $$k^{(l)}_{pq}$$. Notice t
 
 $$
 \begin{aligned}
-\frac{\partial L}{\part k_{pq}^{(l)}}&=\frac{\part L}{\part X^{(l)}}\frac{\part X^{(l)}}{\part u^{(l)}}\frac{\part u^{(l)}}{\part k_{pq}^{(l)}}\\
-&=\sum^{d^{(l)}}_{i=1}\sum^{d^{(l)}}_{j=1}\frac{\part L}{\part x^{(l)}_{ij}}\frac{\part x^{(l)}_{ij}}{\part u^{(l)}_{ij}}\frac{\part u^{(l)}_{ij}}{\part k_{pq}^{(l)}}
+\frac{\partial L}{\partial k_{pq}^{(l)}}&=\frac{\partial L}{\partial X^{(l)}}\frac{\partial X^{(l)}}{\partial u^{(l)}}\frac{\partial u^{(l)}}{\partial k_{pq}^{(l)}}\\
+&=\sum^{d^{(l)}}_{i=1}\sum^{d^{(l)}}_{j=1}\frac{\partial L}{\partial x^{(l)}_{ij}}\frac{\partial x^{(l)}_{ij}}{\partial u^{(l)}_{ij}}\frac{\partial u^{(l)}_{ij}}{\partial k_{pq}^{(l)}}
 \end{aligned}
 $$
 
 
 $$
 \begin{aligned}
-\frac{\part L}{\part b^{(l)}}&=\frac{\part L}{\part X^{(l)}}\frac{\part X^{(l)}}{\part u^{(l)}}\frac{\part u^{(l)}}{\part b^{(l)}}\\
-&=\sum^{d^{(l)}}_{i=1}\sum^{d^{(l)}}_{j=1}\frac{\part L}{\part x^{(l)}_{ij}}\frac{\part x^{(l)}_{ij}}{\part u^{(l)}_{ij}}\frac{\part u^{(l)}_{ij}}{\part b^{(l)}}
+\frac{\partial L}{\partial b^{(l)}}&=\frac{\partial L}{\partial X^{(l)}}\frac{\partial X^{(l)}}{\partial u^{(l)}}\frac{\partial u^{(l)}}{\partial b^{(l)}}\\
+&=\sum^{d^{(l)}}_{i=1}\sum^{d^{(l)}}_{j=1}\frac{\partial L}{\partial x^{(l)}_{ij}}\frac{\partial x^{(l)}_{ij}}{\partial u^{(l)}_{ij}}\frac{\partial u^{(l)}_{ij}}{\partial b^{(l)}}
 \end{aligned}
 $$
 
@@ -50,22 +50,22 @@ From the forward formula, we can see that:
 
 
 $$
-\frac{\part x^{(l)}_{ij}}{\part u^{(l)}_{ij}}=f^{\prime}(u^{(l)}_{ij})\\
-\frac{\part u^{(l)}_{ij}}{\part k_{pq}^{(l)}}=x^{(l-1)}_{i+p-1,j+p-1}\\
-\frac{\part u^{(l)}_{ij}}{\part b^{(l)}}=1
+\frac{\partial x^{(l)}_{ij}}{\partial u^{(l)}_{ij}}=f^{\prime}(u^{(l)}_{ij})\\
+\frac{\partial u^{(l)}_{ij}}{\partial k_{pq}^{(l)}}=x^{(l-1)}_{i+p-1,j+p-1}\\
+\frac{\partial u^{(l)}_{ij}}{\partial b^{(l)}}=1
 $$
 
 
-Let set $$\delta_{ij}^{(l)}=\frac{\part L}{\part u^{(l)}_{ij}}=\frac{\part L}{\part x^{(l)}_{ij}}\frac{\part x^{(l)}_{ij}}{\part u^{(l)}_{ij}}$$, we have:
+Let set $$\delta_{ij}^{(l)}=\frac{\partial L}{\partial u^{(l)}_{ij}}=\frac{\partial L}{\partial x^{(l)}_{ij}}\frac{\partial x^{(l)}_{ij}}{\partial u^{(l)}_{ij}}$$, we have:
 
 
 $$
-\frac{\part L}{\part k_{pq}^{(l)}}=\sum^{d^{(l)}}_{i=1}\sum^{d^{(l)}}_{j=1}\delta_{ij}^{(l)} x^{(l-1)}_{i+p-1,j+p-1}\\
-\frac{\part L}{\part b^{(l)}}=\sum^{d^{(l)}}_{i=1}\sum^{d^{(l)}}_{j=1}\delta_{ij}^{(l)}
+\frac{\partial L}{\partial k_{pq}^{(l)}}=\sum^{d^{(l)}}_{i=1}\sum^{d^{(l)}}_{j=1}\delta_{ij}^{(l)} x^{(l-1)}_{i+p-1,j+p-1}\\
+\frac{\partial L}{\partial b^{(l)}}=\sum^{d^{(l)}}_{i=1}\sum^{d^{(l)}}_{j=1}\delta_{ij}^{(l)}
 $$
 
 
-Actually, if we close look at formula of $\frac{\part L}{\part k_{pq}^{(l)}}$, we notice that it is doing the convolution operation, we can wirte it as:
+Actually, if we close look at formula of $\frac{\partial L}{\partial k_{pq}^{(l)}}$, we notice that it is doing the convolution operation, we can wirte it as:
 
 
 $$
@@ -77,8 +77,8 @@ Next, we want to calculate $\delta^{(l)}$ in a recursive formula. We can write:
 
 
 $$
-\delta_{ij}^{(l)}=\frac{\part L}{\part x^{(l)}_{ij}}\frac{\part x^{(l)}_{ij}}{\part u^{(l)}_{ij}}\\
-\delta_{ij}^{(l-1)}=\frac{\part L}{\part x^{(l-1)}_{ij}}\frac{\part x^{(l-1)}_{ij}}{\part u^{(l-1)}_{ij}}\\
+\delta_{ij}^{(l)}=\frac{\partial L}{\partial x^{(l)}_{ij}}\frac{\partial x^{(l)}_{ij}}{\partial u^{(l)}_{ij}}\\
+\delta_{ij}^{(l-1)}=\frac{\partial L}{\partial x^{(l-1)}_{ij}}\frac{\partial x^{(l-1)}_{ij}}{\partial u^{(l-1)}_{ij}}\\
 $$
 ​	
 
@@ -86,7 +86,7 @@ Notice that $$\delta^{(l-1)}_{ij}$$ is only associate with part of $$x^{(l)}_{ij
 
 
 $$
-\delta^{(l-1)}_{11}=\frac{\part L}{\part x^{(l-1)}_{ij}}\frac{\part x^{(l-1)}_{ij}}{\part u^{(l-1)}_{ij}}=(\sum^{d^{(l)}}_{i=1}\sum^{d^{(l)}}_{j=1}\delta^{(l)}_{ij}\frac{\part u^{(l)}_{ij}}{\part x^{(l-1)}_{11}})\frac{\part x^{(l-1)}_{11}}{\part u^{(l-1)}_{11}}
+\delta^{(l-1)}_{11}=\frac{\partial L}{\partial x^{(l-1)}_{ij}}\frac{\partial x^{(l-1)}_{ij}}{\partial u^{(l-1)}_{ij}}=(\sum^{d^{(l)}}_{i=1}\sum^{d^{(l)}}_{j=1}\delta^{(l)}_{ij}\frac{\partial u^{(l)}_{ij}}{\partial x^{(l-1)}_{11}})\frac{\partial x^{(l-1)}_{11}}{\partial u^{(l-1)}_{11}}
 $$
 
 
@@ -94,8 +94,8 @@ Since $x_{11}^{(l-1)}$ only be used to calculate $u^{(l)}_{11}$,
 
 
 $$
-\frac{\part u^{(l)}_{ij}}{\part x^{(l-1)}_{11}}=k_{11}^{(l)}\ \ \ \ \ \ \ i,j=1\\
-\frac{\part u^{(l)}_{ij}}{\part x^{(l-1)}_{11}}=0\ \ \ \ \ \ \ otherwise
+\frac{\partial u^{(l)}_{ij}}{\partial x^{(l-1)}_{11}}=k_{11}^{(l)}\ \ \ \ \ \ \ i,j=1\\
+\frac{\partial u^{(l)}_{ij}}{\partial x^{(l-1)}_{11}}=0\ \ \ \ \ \ \ otherwise
 $$
 
 
@@ -103,9 +103,9 @@ Similarly, we can calculate $x^{(l-1)}_{12}$:
 
 
 $$
-\frac{\part u^{(l)}_{ij}}{\part x^{(l-1)}_{12}}=k_{12}^{(l)}\ \ \ \ \ \ \ i,j=1\\
-\frac{\part u^{(l)}_{ij}}{\part x^{(l-1)}_{12}}=k_{11}^{(l)}\ \ \ \ \ \ \ i=1,j=2\\
-\frac{\part u^{(l)}_{ij}}{\part x^{(l-1)}_{12}}=0\ \ \ \ \ \ \ otherwise
+\frac{\partial u^{(l)}_{ij}}{\partial x^{(l-1)}_{12}}=k_{12}^{(l)}\ \ \ \ \ \ \ i,j=1\\
+\frac{\partial u^{(l)}_{ij}}{\partial x^{(l-1)}_{12}}=k_{11}^{(l)}\ \ \ \ \ \ \ i=1,j=2\\
+\frac{\partial u^{(l)}_{ij}}{\partial x^{(l-1)}_{12}}=0\ \ \ \ \ \ \ otherwise
 $$
 
 
@@ -156,7 +156,7 @@ $y$ is the output of average pooling. In back propagation:
 
 
 $$
-\frac{\part L}{\part x_i^{(l-1)}}=\frac{\part L}{\part y^{(l)}}\frac{\part y^{(l)}}{\part x_i^{(l-1)}}=\frac{1}{s\times s}\delta^{(l)}
+\frac{\partial L}{\partial x_i^{(l-1)}}=\frac{\partial L}{\partial y^{(l)}}\frac{\partial y^{(l)}}{\partial x_i^{(l-1)}}=\frac{1}{s\times s}\delta^{(l)}
 $$
 
 
@@ -180,12 +180,12 @@ y^{(l)}=max(x_1^{(l-1)},x_2^{(l-1)},...,x_l^{(l-1)})=x_i^{(l-1)}
 $$
 
 $$
-\frac{\part L}{\part x_{i}^{(l-1)}}=\frac{\part L}{\part y^{(l)}}\frac{\part y^{(l)}}{\part x^{(l-1)}_i}=\delta^{(l)}\frac{\part y^{(l)}}{\part x^{(l-1)}_i}
+\frac{\partial L}{\partial x_{i}^{(l-1)}}=\frac{\partial L}{\partial y^{(l)}}\frac{\partial y^{(l)}}{\partial x^{(l-1)}_i}=\delta^{(l)}\frac{\partial y^{(l)}}{\partial x^{(l-1)}_i}
 $$
 
 
 
-if $x^{(l-1)}_i$ is max, $\frac{\part y^{(l)}}{\part x^{(l-1)}_i}=1$, else =0.
+if $x^{(l-1)}_i$ is max, $\frac{\partial y^{(l)}}{\partial x^{(l-1)}_i}=1$, else =0.
 
 ### 4. Fully-connected Layer
 
