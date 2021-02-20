@@ -169,7 +169,7 @@ $ , n is the size of word embedding vector, which we can define by ourselves. $\
 
 Now, the procedures of CBOW can be divided into follow part:
 
-1. We generate our one hot word vectors for the input context of size $$m:\left(x^{(c-m)}, \ldots, x^{(c-1)}, x^{(c+1)}, \ldots, x^{(c+m)} \in \mathbb{R}^{|V|}\right)$$ .
+1. We generate our one hot word vectors for the input context of size $$m:(x^{(c-m)}, \ldots, x^{(c-1)}, x^{(c+1)}, \ldots, x^{(c+m)} \in \mathbb{R}^{\lvert V\rvert })$$ .
 2. Then, we compute the emdedding vector for our context by $$\left(v_{c-m}=\right.\left.\mathcal{V} x^{(c-m)}, v_{c-m+1}=\mathcal{V} x^{(c-m+1)}, \ldots, v_{c+m}=\mathcal{V} x^{(c+m)} \in \mathbb{R}^{n}\right)$$.
 3. Average these vectors to get $$\hat{\mathcal{v}}=\frac{v_{c-m}+v_{c-m+1}+\ldots+v_{c+m}}{2 m} \in \mathbb{R}^{n}$$.
 4. generate a score vector $z=\mathcal{U} \hat{v} \in \mathbb{R}^{\lvert V\rvert}$. As the dot product of similar vectors is higher, it will push similar words close to each other in order to achieve a high score.
@@ -404,7 +404,7 @@ In the Skip-gram model, input only have one word $x_w$ and output are $2c$ conte
 
    for $i=1$ to $2c$:
 
-   ​	e=0 
+   ​	$e=0$ 
 
    ​	for j=2 to $l_w$, we calculate:
    
@@ -503,7 +503,7 @@ $$
 
 $P(w_i)$ is the probability of word $w_i$ to be selected as negative sample. $f(w_i)$ is the frequency of word $w_i$.
 
-The way this selection is implemented in the C code is interesting. They have a large array with 100M elements (which they refer to as the unigram table). They fill this table with the index of each word in the vocabulary multiple times, and the number of times a word’s index appears in the table is given by $P(wi) \times table size$. Then, to actually select a negative sample, you just generate a random integer between 0 and 100M, and use the word at that index in the table. Since the higher probability words occur more times in the table, you’re more likely to pick those. Here is the illustration:
+The way this selection is implemented in the C code is interesting. They have a large array with 100M elements (which they refer to as the unigram table). They fill this table with the index of each word in the vocabulary multiple times, and the number of times a word’s index appears in the table is given by $P(w_i) \times table size$. Then, to actually select a negative sample, you just generate a random integer between 0 and 100M, and use the word at that index in the table. Since the higher probability words occur more times in the table, you’re more likely to pick those. Here is the illustration:
 
 ![image-20200120142312415](/assets/images/image-20200120142312415.png)
 

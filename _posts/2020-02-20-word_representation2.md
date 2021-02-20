@@ -14,7 +14,7 @@ classes: wide
 
 ### 1. Latent Semantic Analysis
 
-Recall in the previous section we mention the co-occurence matrix used for word representation: Given a co-occurence matrix $$X \in \mathbb{R}^{|V|\times |V|}$,where $X_{ij}$$ indicates the number of times word $j$ occur in the context of word $i$. The window size of context is a hyper-parameter.
+Recall in the previous section we mention the co-occurence matrix used for word representation: Given a co-occurence matrix $X \in \mathbb{R}^{\lvert V\rvert \times \lvert V\rvert }$,where $X_{ij}$ indicates the number of times word $j$ occur in the context of word $i$. The window size of context is a hyper-parameter.
 
 The idea behind **Latent Semantic Analysis(LSA)**  is simply that use low dimension word vector to represent the similarity between different words. Some introduction would use A matrix containing word counts per document or TF-IDF matrix to carry on LSA. But given the idea of LSA to mantain orignial similarity between words, it is also possible to use co-occurence matrix to do LSA. Thus, here we use co-occurence
 
@@ -169,7 +169,7 @@ $$
 $$
 
 
-Where $\hat{P}_{i j}=X_{i j}$ and $\hat{Q}_{i j}=\exp \left(\vec{v}_{j}^{T} \vec{v}_{i}+b_{i}+\tilde{b_j}\right)$. Finally, take log and use same $f$ in GloVe, we get:
+Where $$\hat{P}_{i j}=X_{i j}$$ and $$\hat{Q}_{i j}=\exp (\vec{v}_{j}^{T} \vec{v}_{i}+b_{i}+\tilde{b_j})$$. Finally, take log and use same $f$ in GloVe, we get:
 
 
 $$
