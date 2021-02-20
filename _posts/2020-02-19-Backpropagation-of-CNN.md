@@ -31,7 +31,7 @@ In back propagation, we want to calculate gradient of $$k^{(l)}_{pq}$$. Notice t
 
 $$
 \begin{aligned}
-\frac{\part L}{\part k_{pq}^{(l)}}&=\frac{\part L}{\part X^{(l)}}\frac{\part X^{(l)}}{\part u^{(l)}}\frac{\part u^{(l)}}{\part k_{pq}^{(l)}}\\
+\frac{\partial L}{\part k_{pq}^{(l)}}&=\frac{\part L}{\part X^{(l)}}\frac{\part X^{(l)}}{\part u^{(l)}}\frac{\part u^{(l)}}{\part k_{pq}^{(l)}}\\
 &=\sum^{d^{(l)}}_{i=1}\sum^{d^{(l)}}_{j=1}\frac{\part L}{\part x^{(l)}_{ij}}\frac{\part x^{(l)}_{ij}}{\part u^{(l)}_{ij}}\frac{\part u^{(l)}_{ij}}{\part k_{pq}^{(l)}}
 \end{aligned}
 $$
