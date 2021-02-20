@@ -7,8 +7,6 @@ tags:
 classes: wide
 
 
-
-
 ---
 
 
@@ -85,7 +83,7 @@ There are sparsity problems with this equations. First, if the count of $(w_i,w_
 
 In 2003, some researchers suggest that use nerual network to construct language model. Different from traditional statistical language model, NNLM use nerual network to estimate the probability of  $n$ words' sentence directly. The architecture of nerual network is following:
 
-![img](https://img-blog.csdn.net/20160922200454004)
+![img](/assets/images/20160922200454004.png)
 
 Bascially, the procedures of NNLM are: first, collect all the sentences  $ w_{1 }...
 ...w_{T},
@@ -107,14 +105,14 @@ Even with NNLM, we still compute probability within specific size of window, whi
 
 For the theory of RNN, you can see this post: [Recurrent Neural Network](https://jiaruifeng.github.io/DeepLearning/RNN.html). Here we only talk about how to build RNN-LM.
 
-<img src="/Users/jiaruifeng/Library/Application Support/typora-user-images/image-20200311000117367.png" alt="image-20200311000117367" style="zoom:50%;" />
+<img src="/assets/images/image-20200311000117367.png" alt="image-20200311000117367" style="zoom:50%;" />
 
 Above is the architecture of RNN-LM. In each time step, we input a word embedding of current word, then model will compute the probability of the next word. Here is the detailed procedures:
 
 * Let $x_{1}, \ldots, x_{t-1}, x_{t}, x_{t+1}, \ldots x_{T}$ be the word vectors corresponding to a corpus with $T$ words, where $x_{t} \in \mathbb{R}^{d}$.
 
 * In each time step $t$, compute hidden feature $h_{t}=\sigma\left(W_{h} h_{t-1}+W_{e} x_{t}\right)$ , where $\sigma$ is the activation function, $h_{t-1} \in \mathbb{R}^{D_h}$ is output of the non-linear function at the previous time-step $t-1$, $W_{h} \in \mathbb{R}^{D_h\times D_h}$ is weights matrix used to condition the output of previous time-step $h_{t-1}$, $W_{e} \in \mathbb{R}^{D_h\times d}$ is weights matrix used to condition the input word vector $x_t$.
-* After we have $h_t$, we can use $\hat{y}_{t}=\operatorname{softmax}\left(Uh_{t}\right)$ to calcuate the probability distribution over the vocabulary at each time-step $t$, where $\hat{y}_t \in \mathbb{R}^V$,$V$ is the number of words in corpus. 
+* After we have $h_t$, we can use $$\hat{y}_{t}=\operatorname{softmax}\left(Uh_{t}\right)$$ to calcuate the probability distribution over the vocabulary at each time-step $t$, where $$\hat{y}_t \in \mathbb{R}^V$$,$V$ is the number of words in corpus. 
 
 In RNN-LM, we always use cross-entropy as loss function. The total loss for a sentence should be the summation of the loss for every time step, which is:
 
