@@ -14,7 +14,7 @@ classes: wide
 
 ### 1. Notation
 
-Assume layer is $l=1,2,...,L$, data in each layer is $X^{(l)}$, where $x^{(l)}_{ij}$ is the value in the position $(i,j)$ of $X^{(l)}$, $i,j=1,2,...,d^{(l)}$, $d^{(l)}$ is dimension of data in layer $l$. Let size of filter be $s*s$ and $k_{pq}^{(l)}$ is the weight of filter in position $(p,q)$ in layer $l$, where $p,q=1,2,...,s$. $f$ is activation function and $b^{(l)}$ is the constant in layer $l$. Finally, the loss function is $L$. Notice that all the derivation is base on stride equal to 1.
+Assume layer is $$l=1,2,...,L$$, data in each layer is $$X^{(l)}$$, where $$x^{(l)}_{ij}$$ is the value in the position $(i,j)$ of $$X^{(l)}$$, $$i,j=1,2,...,d^{(l)}$$, $d^{(l)}$ is dimension of data in layer $l$. Let size of filter be $$s*s$$ and $$k_{pq}^{(l)}$$ is the weight of filter in position $(p,q)$ in layer $l$, where $$p,q=1,2,...,s$$. $f$ is activation function and $b^{(l)}$ is the constant in layer $l$. Finally, the loss function is $L$. Notice that all the derivation is base on stride equal to 1.
 
 ### 2. Convolutional layer
 
@@ -26,7 +26,7 @@ X^{(l)}_{ij}=f(u^{(l)}_{ij})=f(\sum^s_{p=1}\sum^s_{q=1}x^{(l-1)}_{i+p-1,j+p-1}k_
 $$
 
 
-In back propagation, we want to calculate gradient of $k^{(l)}_{pq}$. Notice that each position of output is associate with every $k^{(l)}_{pq}$ and $b^{(l)}$. To calculate gradient, we write:
+In back propagation, we want to calculate gradient of $$k^{(l)}_{pq}$$. Notice that each position of output is associate with every $$k^{(l)}_{pq}$$ and $$b^{(l)}$$. To calculate gradient, we write:
 
 
 $$
@@ -56,7 +56,7 @@ $$
 $$
 
 
-Let set $\delta_{ij}^{(l)}=\frac{\part L}{\part u^{(l)}_{ij}}=\frac{\part L}{\part x^{(l)}_{ij}}\frac{\part x^{(l)}_{ij}}{\part u^{(l)}_{ij}}$, we have:
+Let set $$\delta_{ij}^{(l)}=\frac{\part L}{\part u^{(l)}_{ij}}=\frac{\part L}{\part x^{(l)}_{ij}}\frac{\part x^{(l)}_{ij}}{\part u^{(l)}_{ij}}$$, we have:
 
 
 $$
@@ -82,7 +82,7 @@ $$
 $$
 ​	
 
-Notice that $\delta^{(l-1)}_{ij}$ is only associate with part of $x^{(l)}_{ij}$. Here we give some examples. Suppose we want calculate $\delta^{(l-1)}_{11}$:
+Notice that $$\delta^{(l-1)}_{ij}$$ is only associate with part of $$x^{(l)}_{ij}$$. Here we give some examples. Suppose we want calculate $$\delta^{(l-1)}_{11}$$:
 
 
 $$
