@@ -27,11 +27,15 @@ To understand the encoder and decoder in transformer, we first introduce self-at
 The input of self-attention layer are the word embedding for sentences or the output from previous layer. Let the dimension of our word embedding be $d_{model}$. In the original paper, $d_{model}=512$. let the length of sentence be $l$. Thus, for one sentence, our input would be a matrix $X \in \mathbb{R}^{l \times d_{model}}$. Self-attention layer have three parameters, query, key and value matrix, denoted it as $W^{Q},W^K,W^V \in \mathbb{R}^{d_{model} \times d_k},\mathbb{R}^{d_{model} \times d_k}, \mathbb{R}^{d_{model} \times d_v}$ respectively, where $d_k$ is a hyperparameter define the length of hidden vector. In original paper, it be set as 64, and we will talk about reason latter. 
 
 The first step of self-attention is to compute three vectors for each word use $W^Q,W^K,W^V$ :
+
+
 $$
 Q=XW^Q\\
 K=XW^K\\
 V=XW^V
 $$
+
+
 Then, we compute a score for every word against each word in the sentence use Q and K, for each word $i$ against word $j$, the score is:
 
 

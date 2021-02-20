@@ -14,7 +14,7 @@ classes: wide
 
 ### 1. GPT<sup>[1]</sup>
 
-In GPT, language model is trained using tranformer decoder structure. Like other pre-training model, GPT also invovled two stage training: pre-training in large scaled unlabeled data and fine-tuning in specific task labeled data.  In unsupervised training, Given an unsupervised corpus of tokens $\mathcal{U}=\left\{u_{1}, \ldots, u_{n}\right\}$, language model is to maximize following likelihood:
+In GPT, language model is trained using tranformer decoder structure. Like other pre-training model, GPT also invovled two stage training: pre-training in large scaled unlabeled data and fine-tuning in specific task labeled data.  In unsupervised training, Given an unsupervised corpus of tokens $\mathcal{U}=\{u_{1}, \ldots, u_{n}\}$, language model is to maximize following likelihood:
 
 
 $$
@@ -125,7 +125,7 @@ BERT prove that learning language model using contextual information from both s
 
 #### Objective
 
-Let $\mathcal{Z}_{T}$ be the set of all possible permutations of the length-$T$ index sequence $[1,2,3,...,T]$. Using $z_t$ and $\mathbf{z}_{<t}$ to denote the $t$-th element and first $t-1$ elements of a permutation $\mathbf{z} \in \mathcal{Z}_{T}$. The objective for new language modeling is follow:
+Let $$\mathcal{Z}_{T}$$ be the set of all possible permutations of the length-$T$ index sequence $$[1,2,3,...,T]$$. Using $$z_t$$ and $$\mathbf{z}_{<t}$$ to denote the $t$-th element and first $t-1$ elements of a permutation $$\mathbf{z} \in \mathcal{Z}_{T}$$. The objective for new language modeling is follow:
 
 
 $$
@@ -136,7 +136,7 @@ $$
 
 #### Two-Stream Self-Attention for Target-Aware Representations
 
-However, to implement it in normal Transformer framework is not so easy. A simple masking of proper positions in attention cannot solve the problem. To see this, assume we parameterize the next-token distribution $ p_{\theta}(X_{z_{t}} \lvert  \mathbf{x}_{\mathbf{z}_{<t}})$ using the standard softmax distribution:
+However, to implement it in normal Transformer framework is not so easy. A simple masking of proper positions in attention cannot solve the problem. To see this, assume we parameterize the next-token distribution $$ p_{\theta}(X_{z_{t}} \lvert  \mathbf{x}_{\mathbf{z}_{<t}})$$ using the standard softmax distribution:
 
 
 $$
@@ -144,7 +144,7 @@ p_{\theta}(X_{z_t}=\left.x | \mathbf{x}_{\mathbf{z}<t}\right)=\frac{\exp \left(e
 $$
 
 
-Where $$ h_{\theta}\left(\mathbf{x}_{\mathbf{z}<t}\right)$$ is the hidden representation of $\mathbf{x}_{z<t}$ produced by transformer with porper masking. However, the prediction of $\mathbf{X}_{z_t}$ don't conditioned on the $z_t$. Suppose we have two different permutations $\mathbf{z}^{(1)}$ and $\mathbf{z}^{(2)}$, satisfying the following relationship:
+Where $$ h_{\theta}\left(\mathbf{x}_{\mathbf{z}<t}\right)$$ is the hidden representation of $$\mathbf{x}_{z<t}$$ produced by transformer with porper masking. However, the prediction of $$\mathbf{X}_{z_t}$$ don't conditioned on the $$z_t$$. Suppose we have two different permutations $$\mathbf{z}^{(1)}$$ and $$\mathbf{z}^{(2)}$$, satisfying the following relationship:
 
 
 $$
@@ -160,14 +160,14 @@ $$
 $$
 
 
-A way to solve it is that, we don't use $ h_{\theta}\left(\mathbf{x}_{\mathbf{z}<t}\right)$ but $g_{\theta}\left(\mathbf{x}_{\mathbf{Z}<t}, z_{t}\right)$, which incorporate information of $z_t$ into it. However how to design $g_{\theta}$ is not trivial. For the prediction of $X_{z_t}$, the $g_{\theta}\left(\mathbf{x}_{\mathbf{Z}<t}, z_{t}\right)$ must only contain information of $z_t$ but not the content of $x_{z_t}$. However, for the $j>t$, the $g_{\theta}\left(\mathbf{x}_{\mathbf{Z}<t}, z_{t}\right)$ must contain the information of $x_{z_t}$.
+A way to solve it is that, we don't use $$ h_{\theta}\left(\mathbf{x}_{\mathbf{z}<t}\right)$$ but $$g_{\theta}\left(\mathbf{x}_{\mathbf{Z}<t}, z_{t}\right)$$, which incorporate information of $z_t$ into it. However how to design $g_{\theta}$ is not trivial. For the prediction of $$X_{z_t}$$, the $$g_{\theta}\left(\mathbf{x}_{\mathbf{Z}<t}, z_{t}\right)$$ must only contain information of $z_t$ but not the content of $x_{z_t}$. However, for the $j>t$, the $$g_{\theta}\left(\mathbf{x}_{\mathbf{Z}<t}, z_{t}\right)$$ must contain the information of $$x_{z_t}$$.
 
 To overcome this, XLNet introduce an architecture called Two-Stream Self-Attention for Target-Aware Representations. That is, inside have only one hidden representation, XLNet have two hidden representation:
 
-* The content representation $h_{\theta}\left(\mathbf{x}_{\mathbf{z}<t}\right)$, or abbreviated as $h_{z_t}$ , which serves a similar role to the standard hidden states in Transformer. This representation encodes *both* the context and $x_{z_t}$ itself.
-* The query representation $g_{\theta}\left(\mathbf{x}_{\mathbf{z}_{<t}}, z_{t}\right)$ or abbreviated as $g_{z_t}$, which only has access to the contextual information $\mathbf{x}_{\mathbf{z}<t}$ and the position $z_t$, but not the content $x_{z_t}$.
+* The content representation $$h_{\theta}\left(\mathbf{x}_{\mathbf{z}<t}\right)$$, or abbreviated as $$h_{z_t}$$ , which serves a similar role to the standard hidden states in Transformer. This representation encodes *both* the context and $$x_{z_t}$$ itself.
+* The query representation $$g_{\theta}\left(\mathbf{x}_{\mathbf{z}_{<t}}, z_{t}\right)$$ or abbreviated as $$g_{z_t}$$, which only has access to the contextual information $$\mathbf{x}_{\mathbf{z}<t}$$ and the position $z_t$, but not the content $$x_{z_t}$$.
 
-The first layer query stream is initialized with a trainable vector $g^{(0)}_{i}=w$, while the content stream is set to the corresponding word embedding $h^{(0)}_i=e(x_i)$. Thus, for each self-attention layer $m=1,...,M$, the formulation of two stream are:
+The first layer query stream is initialized with a trainable vector $$g^{(0)}_{i}=w$$, while the content stream is set to the corresponding word embedding $$h^{(0)}_i=e(x_i)$$. Thus, for each self-attention layer $m=1,...,M$, the formulation of two stream are:
 
 
 $$
@@ -184,7 +184,7 @@ You the see the picture illustration in follow:
 
 To reduce the optimization difficulty, XLNet don't predict every word in sentence. Instead, it only predict the last $1/K$ tokens, where $K$ is a hyperparameter. 
 
-Meanwhile, XLNet also incorporate relative postional encoding and and segment recurrence mechanism. Actually, relative positional encoding is what we talked about. For segment reurrence mechanism, suppose we have two segment taken from a long sequence $\mathbf{s}$, name as $\tilde{\mathbf{x}}=\mathbf{s}_{1: T}$ and $\mathbf{x}=s_{T+1:2T}$. Let $\tilde{\mathbf{z}}$ and $\mathbf{z}$ be the permutations of $[1,2,...,T]$ and $[T+1,T+2,...,2T]$ respectively. Then, based on one permutation of $\tilde{\mathbf{z}}$, we get the hidden representation $\tilde{\mathbf{h}}^{(m)}$ for each layer $m$. The attention update with memory can be written as:
+Meanwhile, XLNet also incorporate relative postional encoding and and segment recurrence mechanism. Actually, relative positional encoding is what we talked about. For segment reurrence mechanism, suppose we have two segment taken from a long sequence $$\mathbf{s}$$, name as $$\tilde{\mathbf{x}}=\mathbf{s}_{1: T}$$ and $$\mathbf{x}=s_{T+1:2T}$$. Let $$\tilde{\mathbf{z}}$$ and $$\mathbf{z}$$ be the permutations of $[1,2,...,T]$ and $[T+1,T+2,...,2T]$ respectively. Then, based on one permutation of $$\tilde{\mathbf{z}}$$, we get the hidden representation $$\tilde{\mathbf{h}}^{(m)}$$ for each layer $m$. The attention update with memory can be written as:
 
 
 $$
@@ -196,7 +196,7 @@ Where $[...]$ is concatenation along the sequence dimension.The detailed view of
 
 <img src="/assets/images/image-20200617231812610.png" alt="image-20200617231812610" style="zoom:50%;" />
 
-<img src="/Users/jiaruifeng/Library/Application Support/typora-user-images/image-20200617231831854.png" alt="image-20200617231831854" style="zoom:50%;" />
+<img src="/assets/images/image-20200617231831854.png" alt="image-20200617231831854" style="zoom:50%;" />
 
 Actually, XLNet also including segment relative embedding, here we don't talk about it in detailed. Druing training, XLNet use larger dataset with bigger model, which result in better performance that BERT in many tasks.
 
