@@ -4,6 +4,7 @@ categories:
   - Natural Language Processing
 tags:
   - Learning note
+  - Paper reading
 classes: wide
 
 ---
