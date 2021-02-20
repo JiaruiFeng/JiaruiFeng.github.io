@@ -16,7 +16,7 @@ One of the challenges of deep learning is that the gradients with respect to the
 
 ### 2. Batch Normalization
 
-Batch normlization is an idea to prevent internal covariate shift and speed up neural network training. Batch normalization take the idea whitening the input of neural network as to normalize the input of each layer. However, the problem occur with whitening input is that, first, the computation cost to whitening input in each layer is expensive. Second, note that simply normalizing each input of a layer may change what the layer can represent. For instance, normalizing the inputs of a sigmoid would constrain them to the linear regime of the nonlinearity. To deal with these issues, batch normalization decide to normalize data in mini-batch size and also add some trick to maintain the information expression ability of data. Here is the formula of batch normalization. Let value of input in layer $l$ over mini-batch be $\mathcal{B}=\left\{x_{1 \ldots m}\right\}$, $\gamma$ and $\beta$ are gain parameters that use to restore the ability of data to represent information:
+Batch normlization is an idea to prevent internal covariate shift and speed up neural network training. Batch normalization take the idea whitening the input of neural network as to normalize the input of each layer. However, the problem occur with whitening input is that, first, the computation cost to whitening input in each layer is expensive. Second, note that simply normalizing each input of a layer may change what the layer can represent. For instance, normalizing the inputs of a sigmoid would constrain them to the linear regime of the nonlinearity. To deal with these issues, batch normalization decide to normalize data in mini-batch size and also add some trick to maintain the information expression ability of data. Here is the formula of batch normalization. Let value of input in layer $l$ over mini-batch be $$\mathcal{B}=\{x_{1 \ldots m}\}$$, $\gamma$ and $\beta$ are gain parameters that use to restore the ability of data to represent information:
 
 
 $$
@@ -27,7 +27,7 @@ y_{i} \leftarrow \gamma \widehat{x}_{i}+\beta \equiv \mathrm{B} \mathrm{N}_{\gam
 $$
 
 
-Where $\widehat{x}_{i}$ is normalized $x_i$, $\epsilon$ is a constant to prevent variance to be zero. During each mini-batch of training, we can calculate $\mu_\mathcal{B}$ and $\sigma_{\mathcal{B}}$ , then use this term to normalize output. $\gamma$ and $\beta$ are learnable parameters.
+Where $$\widehat{x}_{i}$$ is normalized $$x_i$$, $$\epsilon$$ is a constant to prevent variance to be zero. During each mini-batch of training, we can calculate $$\mu_\mathcal{B}$$ and $$\sigma_{\mathcal{B}}$$ , then use this term to normalize output. $$\gamma$$ and $$\beta$$ are learnable parameters.
 
 ##### Using batch normalization during prediction
 
