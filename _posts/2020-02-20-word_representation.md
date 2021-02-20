@@ -81,7 +81,7 @@ $$
 $$
 
 
-$|D|$ is the total number of documents in corpus, $d_{j}$ is the document $j$. Combine TF and IDF, we can now define the TF-IDF as following:
+$\lvert D\rvert$ is the total number of documents in corpus, $d_{j}$ is the document $j$. Combine TF and IDF, we can now define the TF-IDF as following:
 
 
 $$
@@ -169,11 +169,11 @@ $ , n is the size of word embedding vector, which we can define by ourselves. $\
 
 Now, the procedures of CBOW can be divided into follow part:
 
-1. We generate our one hot word vectors for the input context of size $m:\left(x^{(c-m)}, \ldots, x^{(c-1)}, x^{(c+1)}, \ldots, x^{(c+m)} \in \mathbb{R}^{|V|}\right)$ .
-2. Then, we compute the emdedding vector for our context by $\left(v_{c-m}=\right.\left.\mathcal{V} x^{(c-m)}, v_{c-m+1}=\mathcal{V} x^{(c-m+1)}, \ldots, v_{c+m}=\mathcal{V} x^{(c+m)} \in \mathbb{R}^{n}\right)$.
-3. Average these vectors to get $\hat{\mathcal{v}}=\frac{v_{c-m}+v_{c-m+1}+\ldots+v_{c+m}}{2 m} \in \mathbb{R}^{n}$.
-4. generate a score vector $z=\mathcal{U} \hat{v} \in \mathbb{R}^{|V|}$. As the dot product of similar vectors is higher, it will push similar words close to each other in order to achieve a high score.
-5. Turn the scores into probabilities $\hat{y}=\operatorname{softmax}(z) \in \mathbb{R}^{|V|}$.
+1. We generate our one hot word vectors for the input context of size $$m:\left(x^{(c-m)}, \ldots, x^{(c-1)}, x^{(c+1)}, \ldots, x^{(c+m)} \in \mathbb{R}^{|V|}\right)$$ .
+2. Then, we compute the emdedding vector for our context by $$\left(v_{c-m}=\right.\left.\mathcal{V} x^{(c-m)}, v_{c-m+1}=\mathcal{V} x^{(c-m+1)}, \ldots, v_{c+m}=\mathcal{V} x^{(c+m)} \in \mathbb{R}^{n}\right)$$.
+3. Average these vectors to get $$\hat{\mathcal{v}}=\frac{v_{c-m}+v_{c-m+1}+\ldots+v_{c+m}}{2 m} \in \mathbb{R}^{n}$$.
+4. generate a score vector $z=\mathcal{U} \hat{v} \in \mathbb{R}^{\lvert V\rvert}$. As the dot product of similar vectors is higher, it will push similar words close to each other in order to achieve a high score.
+5. Turn the scores into probabilities $\hat{y}=\operatorname{softmax}(z) \in \mathbb{R}^{\lvert V\rvert}$.
 6. We desire our probabilities generated,$\hat{y} \in \mathbb{R}^{\lvert V\rvert}$ , to match the true probabilities,$y \in \mathbb{R}^{\lvert V\rvert }$, which also happens to be the one hot vector of the actual word.
 
 Next step, we need to define our objective function. As we mentioned above, we want the probability of center word in $\hat{y}$ to be maximized. Thus, we can use cross-entropy to measure to different distribution:
@@ -225,7 +225,7 @@ We breakdown the way this model works in these 6 steps:
 1. We generate our one hot input vector $x \in \mathbb{R}^{\lvert V\rvert}$ of the center word.
 2. We get our embedded word vector for the center word $v_{c}=\mathcal{V} x \in \mathbb{R}^{n}$.
 3. Generate a score vector $z=\mathcal{U} v_{c}$.
-4. Turn the score vector into probabilities, $\hat{y}=\operatorname{softmax}(z)$. Note that $\hat{y}_{c-m}, \ldots, \hat{y}_{c-1}, \hat{y}_{c+1}, \ldots, \hat{y}_{c+m}$ are the probabilities of observeing each context word.
+4. Turn the score vector into probabilities, $$\hat{y}=\operatorname{softmax}(z)$$. Note that $$\hat{y}_{c-m}, \ldots, \hat{y}_{c-1}, \hat{y}_{c+1}, \ldots, \hat{y}_{c+m}$$ are the probabilities of observeing each context word.
 5. We desire our probability vector generated to match the true prob- abilities which is $y^{(c-m)}, \ldots, y^{(c-1)}, y^{(c+1)}, \ldots, y^{(c+m)}$, the one hot vectors of the actual output.
 
 Here, in order to define objective function, we need to introduce an assumption, which is also the main difference between CBOW and Skip-gram. we assume that given the center word, all output words are completely independent, this is called Naive Bayes assumption. Thus, our objective function can be defined as following:
