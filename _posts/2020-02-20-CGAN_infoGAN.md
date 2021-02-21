@@ -4,6 +4,7 @@ categories:
   - Deep Learning
 tags:
   - Learning note
+  - Paper reading
 classes: wide
 
 ---
