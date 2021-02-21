@@ -149,7 +149,7 @@ collections:
     permalink: /:collection/:path/
 
 analytics:
-  provider: "google-universal"
+  provider: "google-gtag"
   google:
     tracking_id: "G-7D455D5ST1"
-    anonymize_ip: false # default
+    anonymize_ip: true 
