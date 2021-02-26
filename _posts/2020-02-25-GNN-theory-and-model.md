@@ -101,7 +101,7 @@ $$
 
 This is the final formula of GCN.  The illustration of GCN is shown in the following figure:
 
-<div align=center>![GCN](/assets/images/GCN.png)
+![GCN](/assets/images/GCN.png)
 
 The GCN can also be written as general framework we mentioned in the beginning, which is inductive version of GCN:
 
