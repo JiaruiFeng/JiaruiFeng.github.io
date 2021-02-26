@@ -1,14 +1,15 @@
 ---
-title: "Graph Neural Network-Theory and Model"
+title: "Graph Neural Network-Model and Theory"
 categories:
   - Deep Learning
-  - Graph neural network
-tags：
+  - Graph Neural Network
+tags:
   - Learning note
   - Literature review
+classes: wide
+
+
 ---
-
-
 
 ### 1. Introduction
 
@@ -22,7 +23,7 @@ Graph structure data are ubiquitous in the world, representing objects and their
 
 A graph is defined by $$G=(V,E)$$, where $$V$$ is the node set with $$V={v_1,v_2,...,v_n}$$, $n$ is the number of node in graph, $E$ is the edge set with $$E \subseteq V \times V$$ and we set $m$ is the number of edge in the graph. $$A \in \mathbb{R}^{n \times n}$$ is the adjacency matrix. In GNN, a graph will also have node feature and edge feature, denoted as $$X^{V}\in \mathbb{R}^{n \times d^V}$$ and $$X^{E} \in \mathbb{R}^{n \times d^E}$$, where $$x_i^V$$ is the feature of $i$-$th$ node in graph and $$x_{ij}^{E}$$  is the feature of edge between node $i$ and $j$ .  
 
-To better illustrate the GNN, we also define $$\mathcal{N}_{k}(i)$$ as k-step neighbors of $$v_i$$ and $$\mathcal{N}(i)$$ as 1-step neighbors of $$v_i$$.  The $$D\in n \times n$$ is the degree matrix of graph, where $$D(i, i)=\sum_{j} A(i, j)$$.  $$H^l \in \mathbb{R^{n \times d^V}}$$ is the hidden representation of graph in $$l$$ layer of GNN and $$h_i^l$$ is the hidden representation of node $i$ in layer $$l$$.  The $$\sigma$$ is the non-linear function in neural network, like ReLu and sigmoid. $$\odot$$ is the point-wise multiplication of matrix.
+ßTo better illustrate the GNN, we also define $$\mathcal{N}_{k}(i)$$ as k-step neighbors of $$v_i$$ and $$\mathcal{N}(i)$$ as 1-step neighbors of $$v_i$$.  The $$D\in n \times n$$ is the degree matrix of graph, where $$D(i, i)=\sum_{j} A(i, j)$$.  $$H^l \in \mathbb{R^{n \times d^V}}$$ is the hidden representation of graph in $$l$$ layer of GNN and $$h_i^l$$ is the hidden representation of node $i$ in layer $$l$$.  The $$\sigma$$ is the non-linear function in neural network, like ReLu and sigmoid. $$\odot$$ is the point-wise multiplication of matrix.
 
 
 

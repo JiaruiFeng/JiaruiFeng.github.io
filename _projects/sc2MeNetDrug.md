@@ -1,6 +1,6 @@
 ---
 title: "sc2MeNetDrug"
-excerpt: "A tool that help you to analyze scRNA seq data in an efficient, reliable, and convenient way."
+excerpt: "A tool for analyzing scRNA seq data in an efficient, reliable, and convenient way."
 header:
   image: /assets/images/sc2MeNetDrug_flow.png
   teaser: /assets/images/sc2MeNetDrug_icn.png
