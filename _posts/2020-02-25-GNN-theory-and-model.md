@@ -7,17 +7,15 @@ tags:
   - Learning note
   - Literature review
 classes: wide
-
-
 ---
 
 ### 1. Introduction
 
 Graph structure data are ubiquitous in the world, representing objects and their relationship in many fields, like bioinformatics, social network, e-commerce networks. It will bring huge impact if we can efficiently represent the graph using algorithm and model[<sup>1</sup>](#refer1). However, the intrinsic non-Euclidean structure make the most of ordinary algorithms and model unusable.  Recently, a new type of deep learning model named **graph neural network(GNN)** achieved enormous attention since it propose a potential outlet for modeling graph-structure data. In this series of posts, a brief summarization of GNN including model and theory, application and practical tricks will be discussed.  This post is the first post in the series talking about theory and several popular models of GNN. For the rest of parts, please see: 
 
-[Graph Neural Network-Application]()
+[Graph Neural Network-Application](https://jiaruifeng.github.io/deep%20learning/graph%20neural%20network/GNN-application/)
 
-[Graph Neural Network-Practical Tricks]()
+[Graph Neural Network-Practical Tricks](https://jiaruifeng.github.io/deep%20learning/graph%20neural%20network/GNN-Practical-tricks/)
 
 ### 2. Notations and Preliminaries
 
@@ -103,7 +101,7 @@ $$
 
 This is the final formula of GCN.  The illustration of GCN is shown in the following figure:
 
-<p align="center"><img src="/assets/images/GCN.PNG",alt="GCN"></p> 
+![GCN](/assets/images/GCN.PNG)
 
 The GCN can also be written as general framework we mentioned in the beginning, which is inductive version of GCN:
 
@@ -185,9 +183,9 @@ Another contribution of GraphSAGE are that it introduce graph sampling for mini-
 
 #### Graph Attention Network(GAT)[<sup>4</sup>](#refer4)
 
-<p align="center"><img src="/assets/images/GAT.PNG",alt="GAT"></p> 
+ ![GAT](/assets/images/GAT.PNG)
 
- GAT introduce the attention mechanism[<sup>5,6</sup>](#refer7) into GNN.  In GCN, we can regards the aggregation operation as assign a equal weight to each neighbor of cent node when doing summation. However, different neighbors should have different importance when aggregate their information to center node. Therefore, the main attribute of GAT is that it automatically learn a weight when doing aggregation operation:
+GAT introduce the attention mechanism[<sup>5,6</sup>](#refer7) into GNN.  In GCN, we can regards the aggregation operation as assign a equal weight to each neighbor of cent node when doing summation. However, different neighbors should have different importance when aggregate their information to center node. Therefore, the main attribute of GAT is that it automatically learn a weight when doing aggregation operation:
 
 
 
@@ -253,7 +251,7 @@ There are many different possible way for $$READOUT$$ function in GNNs, like sim
 
 In DiffPool, the author consider the GNN as a hierarchical $$READOUT$$ operation. In each layer of DiffPool, the model not only learn the representation of the nodes, but also pool the nodes to construct a new coarsened graph. This whole process is repeated for $$L$$ layers and we use the final output representation to classify the graph, as shown in the figure below.
 
-<p align="center"><img src="/assets/images/diffpool.PNG",alt="diffpool"></p> 
+![diffpool](/assets/images/diffpool.PNG)
 
 The model achieve this by introducing a cluster assignment matrix $$S^{(l)} \in \mathbb{R}^{n_{l} \times n_{l+1}}$$.  Each row of $$S^{(l)}$$ corresponds to one of the $$n_l$$ nodes(or clusters) at layer $$l$$, and each column of $$S^{(l)}$$ corresponds to one of the $$n_{l+1}$$ clusters at the next layer $$l+1$$. Suppose we already know the $$S^{(l)}$$, the generation of new coarsened graph in DiffPool is:
 
@@ -290,7 +288,7 @@ As we already know, the depth of deep neural network play a crucial role in the 
 
 The over-smoothing is that, the node activation will converge to a certain space given different situation. The GNN is mainly aggregate information of center node and its neighbors. With this intuition, the nodes in $L$ layer GNN will contain the information of $L$-step neighbors. Therefore, if we continue increase the number of layer, every node in same component of graph will contain exactly same amount of information. Further, it has be proved that [<sup>9</sup>](#refer9) the GNN will converge to the following space given different situation:
 
-<p align="center"><img src="/assets/images/oversmoothing.PNG",alt="oversmoothing"></p> 
+![oversmoothing](/assets/images/oversmoothing.PNG)
 
 As a result, we must be very careful when increase the depth of GNN. There have been many works that try to tackle this problem. One possible solution is DropEdge.
 
@@ -312,9 +310,7 @@ In the paper, the author also prove the effeteness of DropEdge in alleviating ov
 
 The performance of DropEdge can be seen in the following figure:
 
-<p align="center"><img src="/assets/images/DropEdge.PNG",alt="DropEdge"></p> 
-
-
+![DropEdge](/assets/images/DropEdge.PNG)
 
 #### 4.2 Training Dynamics and Over-fitting
 
@@ -338,7 +334,7 @@ Where the $\alpha$ control the balance between the GCN propagation and residual 
 
 In JKNet, we not only consider residual connection between $l-1$ and $l$ layer. Instead, we pass the information from each layer to the last layer, and then adaptively learn an layer aggregation function to integrate the information from each layer, as shown in the figure:
 
-<p align="center"><img src="/assets/images/jknet.PNG",alt="jknet"></p> 
+![jknet](/assets/images/jknet.PNG)
 
 Where the $N.A.$ in the figure represent the $MSG$ and $AGG$ component of GNN. The layer aggregation is independent to the nodes. Moreover, the JKNet can be integrated into the most of GNN architectures.
 
@@ -392,7 +388,7 @@ Further, the author proposed that: **If the neighbor aggregation and graph-level
 
 Next, the author shows that the mean and max aggregator commonly seen in GNN are not injective and sum aggregator have the maximum expressive power:
 
-<p align="center"><img src="/assets/images/GIN.PNG",alt="GIN"></p> 
+![GIN](/assets/images/GIN.PNG)
 
 Based on the conclusion,  they propose the GIN, which has been proved to have the same ability as WL-test. In GIN, the node representation is:
 
@@ -425,11 +421,11 @@ After we prove the representational ability of typical GNNs, one may asking, is 
 
 The main idea of ID-GNN is that, to embed a given node $$v$$ using $$K$$-layer GNN, we first extract the $$K$$-hop ego network around node $v$. Then, we assign the center node with different color and use different $MSG$ component to embed the node. Finally, we only use the embedding of node $v$ as the final embedding. The algorithm is described in below:
 
-<p align="center"><img src="/assets/images/IDGNN.PNG",alt="IDGNN"></p> 
+![IDGNN](/assets/images/IDGNN.PNG)
 
 One big attribute of ID-GNN is that it can be incorporate into the most of massage passing architectures. In the paper, the author prove that the ID-GNN with GIN model are at least as powerful as original GIN and can discriminate several type of graphs that original GIN cannot. Here is one example:
 
-<p align="center"><img src="/assets/images/IDGNN2.PNG",alt="IDGNN2"></p> 
+![IDGNN2](/assets/images/IDGNN2.PNG)
 
 In each case, if you use typical massage passing GNN, you will get same embedding of node $$A$$ and $$B$$ (suppose the features for each node in graph are identical), since the computational graph of two node are identical. However, if we use ID-GNN and assign the center node with different color, the computational graph become different and thus the embedding are not identical.
 
@@ -439,7 +435,7 @@ In each case, if you use typical massage passing GNN, you will get same embeddin
 
 One type of graph that typical GNNs and WL-test cannot distinguish is $$r$$-regular graph. Here is a 3-regular graph with 8 nodes:
 
-<p align="center"><img src="/assets/images/DE.PNG",alt="DE"></p> 
+![DE](/assets/images/DE.PNG)
 
 If we use typical GNNs, we will get same embedding for all the nodes(assume the node attribute is the same). However, nodes with different color should have different embedding, since as they are not structurally equivalent.  Further,  typical GNNs cannot distinguish node pair (like $$\{v_1,v_2\}$$ and $$\{v_4,v_7\}$$). However, if we use shortest-path distances (SPDs) between nodes as features we can distinguish blue nodes from green and red nodes because there is another node with SPD= 3 to a blue node of interest (SPD between $$v_3$$ and $$v_8$$), while all SPDs between other nodes to red/green nodes are less than 3.  
 
