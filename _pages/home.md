@@ -10,7 +10,7 @@ I'm a M.S student in Washington University in St.Louis, major in Data Analytics 
 
 ## News
 
-Glad to announce that I will become a P.hD candidate at WashU Computer Science and Engineering department in Fall 2021, co-advised by [Dr. Yixin Chen](https://www.cse.wustl.edu/~ychen/) and  [Dr. Fuhai Li](https://informatics.wustl.edu/research-lab-fuhai-li/)! I am really appreciated for all the help I have received during my application.
+Glad to announce that I will become a P.hD candidate at WashU Computer Science and Engineering department in Fall 2021, co-advised by [Dr. Yixin Chen](https://www.cse.wustl.edu/~ychen/) and  [Dr. Fuhai Li](https://informatics.wustl.edu/research-lab-fuhai-li/)! I am really appreciated for all the help I have received during my application.{: .notice--success}
 
-{: .notice--success}
-
+**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice--info}` class.
+{: .notice--info}
