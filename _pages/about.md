@@ -21,8 +21,8 @@ I'm a second-year Ph.D student in the Department of Computer Science and Enginee
 
 
 # 🔥 News
-- *2021.09*: &nbsp;🎉🎉 Our paper "[How powerful are K-hop message passing graph neural networks](https://arxiv.org/abs/2205.13328)" is accepted to NeurIPS 2022. See you in New Orleans!
-- *2021.08*: &nbsp;🎉🎉 Our paper "[Reward delay attacks on deep reinforcement learning](https://arxiv.org/abs/2209.03540)" is accepted to GameSec 2022.
+- *2022.09*: &nbsp;🎉🎉 Our paper "[How powerful are K-hop message passing graph neural networks](https://arxiv.org/abs/2205.13328)" is accepted to NeurIPS 2022. See you in New Orleans!
+- *2022.08*: &nbsp;🎉🎉 Our paper "[Reward delay attacks on deep reinforcement learning](https://arxiv.org/abs/2209.03540)" is accepted to GameSec 2022.
 
 
 # 📝 Publications 
