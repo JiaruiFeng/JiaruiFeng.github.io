@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: ""
+title: "Jiarui Feng"
 excerpt: ""
 author_profile: true
 redirect_from: 
@@ -17,42 +17,62 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
-
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+I'm a second-year Ph.D student in the Department of Computer Science and Engineering, Washington University in St.Louis (WashU). I'm fortunately supervised by [Dr. Yixin Chen](https://www.cse.wustl.edu/~yixin.chen/) and [Dr. Fuhai Li](https://informatics.wustl.edu/research-lab-fuhai-li/). My research focus on graph neural network and its expressive power, XAI, and their applications in precision medicine and health care. 
 
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2021.09*: &nbsp;🎉🎉 Our paper "[How powerful are K-hop message passing graph neural networks](https://arxiv.org/abs/2205.13328)" is accepted to NeurIPS 2022. See you in New Orleans!
+- *2021.08*: &nbsp;🎉🎉 Our paper "[Reward delay attacks on deep reinforcement learning](https://arxiv.org/abs/2209.03540)" is accepted to GameSec 2022.
+
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2022</div><img src='images/khop.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[How powerful are K-hop message passing graph neural networks](https://arxiv.org/abs/2205.13328)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
-
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+**Jiarui Feng**, Yixin Chen, Fuhai Li, Anindya Sarkar, Muhan Zhang \\
+<a href="https://arxiv.org/abs/2205.13328"><img src="https://img.shields.io/badge/-Paper-grey?logo=gitbook&logoColor=white" alt="Paper"></a>
+<a href="https://github.com/JiaruiFeng/KP-GNN"><img src="https://img.shields.io/badge/-Github-blue?logo=github" alt="Github"></a>
+<a href="https://openreview.net/forum?id=nN3aVRQsxGd&referrer=%5Bthe%20profile%20of%20Jiarui%20Feng%5D(%2Fprofile%3Fid%3D~Jiarui_Feng1)"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=NeurIPS%2722&color=yellow"> </a>
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">GameSec 2022</div><img src='images/rewarddelay.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Reward Delay Attacks on Deep Reinforcement Learning](https://arxiv.org/abs/2209.03540)
+
+Anindya Sarkar, **Jiarui Feng**, Yevgeniy Vorobeychik, Christopher Gill, Ning Zhang \\
+<a href="https://link.springer.com/chapter/10.1007/978-3-031-26369-9_11"><img src="https://img.shields.io/badge/-Paper-grey?logo=gitbook&logoColor=white" alt="Paper"></a>
+<a href="https://github.com/anindyasarkarIITH/Reward_Delay_Attack_DRL"><img src="https://img.shields.io/badge/-Github-blue?logo=github" alt="Github"></a>
+<a href="https://link.springer.com/chapter/10.1007/978-3-031-26369-9_11"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=GameSec%2722&color=yellow"> </a>
+</div>
+</div>
+
+You can browse my full publications in [Google Scholar](https://scholar.google.com/citations?user=6CSGUR8AAAAJ&hl=zh-CN)
 
 # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2021.07* ICIBM 2021 Travel Award. 
+
 
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2021.09 - Present*, Ph.D student, Washington University in St. Louis, MO, USA.
+- *2019.09 - 2021.05*, Master, Washington University in St. Louis, MO, USA.
+- *2015.09 - 2019.06*, Bachelor, South China Univerity of Technology, GuangZhou, China.
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
 
 # 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+- *2019.06 - 2019.08*, Ali Cloud, HangZhou, China.
+- *2018.12 - 2019.02*, Credit card center, GuangZhou Bank, GuangZhou, China.
+
+
+# 🎮 Misc
+- Crazy computer gamer: Overwatch, APEX, World of warcraft, PUBG, CS:GO...
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">theta!</div><img src='images/theta.jpeg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+- I have a cute ragdoll called $\theta$, I love him!!!!!!!!!!!!!
+</div>
+</div>
