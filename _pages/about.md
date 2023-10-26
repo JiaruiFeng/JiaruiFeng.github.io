@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I'm a third-year Ph.D. student in the Department of Computer Science and Engineering, Washington University in St.Louis (WashU). I'm fortunately supervised by [Dr. Yixin Chen](https://www.cse.wustl.edu/~yixin.chen/) and [Dr. Fuhai Li](https://informatics.wustl.edu/research-lab-fuhai-li/). My research focus on graph neural network and its expressive power, XAI, and their applications in precision medicine and health care. 
+I'm a third-year Ph.D. candidate in the Department of Computer Science and Engineering, Washington University in St.Louis (WashU). I'm fortunately supervised by [Dr. Yixin Chen](https://www.cse.wustl.edu/~yixin.chen/) and [Dr. Fuhai Li](https://informatics.wustl.edu/research-lab-fuhai-li/). My research focus on graph neural network and its expressive power, XAI, and their applications in precision medicine and health care. 
 
 
 # 🔥 News
