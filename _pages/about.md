@@ -42,7 +42,7 @@ I'm a third-year Ph.D student in the Department of Computer Science and Engineer
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023 spotlight</div><img src='images/drfwl2.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023 spotlight</div><img src='images/drfwl2.png' alt="sym" width="65%" height="65%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Distance-Restricted Folklore Weisfeiler-Leman GNNs with Provable Cycle Counting Power](https://arxiv.org/abs/2309.04941)
