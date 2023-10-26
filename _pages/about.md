@@ -29,7 +29,18 @@ I'm a third-year Ph.D student in the Department of Computer Science and Engineer
 - *2022.08*: &nbsp;🎉🎉 Our paper "[Reward delay attacks on deep reinforcement learning](https://arxiv.org/abs/2209.03540)" is accepted by GameSec 2022.
 
 
-# 📝 Selected Publications 
+# 📝 Selected Publications
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023</div><img src='images/neighborhood_tuple.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Extending the Design Space of Graph Neural Networks by Rethinking Folklore Weisfeiler-Lehman](https://arxiv.org/abs/2306.03266)
+
+**Jiarui Feng**, Lecheng Kong, Hao Liu, Dacheng Tao, Fuhai Li, Muhan Zhang, Yixin Chen \\
+<a href="https://arxiv.org/abs/2306.03266"><img src="https://img.shields.io/badge/-Paper-grey?logo=gitbook&logoColor=white" alt="Paper"></a>
+<a href="https://github.com/JiaruiFeng/N2GNN"><img src="https://img.shields.io/badge/-Github-blue?logo=github" alt="Github"></a>
+<a href="https://arxiv.org/abs/2306.03266"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=NeurIPS%2723&color=yellow"> </a>
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023 spotlight</div><img src='images/drfwl2.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -43,19 +54,6 @@ Junru Zhou, **Jiarui Feng**, Xiyuan Wang, Muhan Zhang \\
 </div>
 </div>
 
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023</div><img src='images/neighborhood_tuple.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Extending the Design Space of Graph Neural Networks by Rethinking Folklore Weisfeiler-Lehman](https://arxiv.org/abs/2306.03266)
-
-**Jiarui Feng**, Lecheng Kong, Hao Liu, Dacheng Tao, Fuhai Li, Muhan Zhang, Yixin Chen \\
-<a href="https://arxiv.org/abs/2306.03266"><img src="https://img.shields.io/badge/-Paper-grey?logo=gitbook&logoColor=white" alt="Paper"></a>
-<a href="https://github.com/JiaruiFeng/N2GNN"><img src="https://img.shields.io/badge/-Github-blue?logo=github" alt="Github"></a>
-<a href="https://arxiv.org/abs/2306.03266"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=NeurIPS%2723&color=yellow"> </a>
-</div>
-</div>
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2022</div><img src='images/khop.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -65,6 +63,7 @@ Junru Zhou, **Jiarui Feng**, Xiyuan Wang, Muhan Zhang \\
 <a href="https://arxiv.org/abs/2205.13328"><img src="https://img.shields.io/badge/-Paper-grey?logo=gitbook&logoColor=white" alt="Paper"></a>
 <a href="https://github.com/JiaruiFeng/KP-GNN"><img src="https://img.shields.io/badge/-Github-blue?logo=github" alt="Github"></a>
 <a href="https://openreview.net/forum?id=nN3aVRQsxGd&referrer=%5Bthe%20profile%20of%20Jiarui%20Feng%5D(%2Fprofile%3Fid%3D~Jiarui_Feng1)"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=NeurIPS%2722&color=yellow"> </a>
+<a href="https://github.com/JiaruiFeng/KP-GNN"><img src="https://img.shields.io/github/stars/JiaruiFeng/KP-GNN?style=social" alt="Github"></a>
 </div>
 </div>
 
