@@ -23,13 +23,25 @@ I'm a third-year Ph.D student in the Department of Computer Science and Engineer
 # 🔥 News
 - *2023.10*: We have developed a novel R Shiny application **sc2MeNetDrug** for the analysis of single-cell RNA-seq data. This application enables the identification of activated pathways, up-regulated ligands and receptors, cell-cell communication networks, and potential drugs to inhibit dysfunctional networks. Moreover, it provides user-friendly UI for easy usage! Check out our [GitHub repository](https://github.com/fuhaililab/sc2MeNetDrug) and [website](https://fuhaililab.github.io/sc2MeNetDrug/) for more details. This project is still ongoing, and we welcome any comments or suggestions!
 - *2023.10*: Leveraging the power of language and LLMs, we propose **One-for-ALL (OFA)**, which is the first general framework that can use a single graph model to address (almost) all different graph classification tasks from different domains. Check out our [preprint](https://arxiv.org/abs/2310.00149) and [code](https://github.com/LechengKong/OneForAll)!
-- *2023.09*: &nbsp;🎉🎉 3 papers are accepted to NeurIPS 2023 (1 spotlight)!
+- *2023.09*: &nbsp;🎉🎉 [(k,t)-FWL+](https://arxiv.org/abs/2306.03266), MAG-GNN, and [d-DRFWL2(spotlight)](https://arxiv.org/pdf/2309.04941.pdf) are accepted by NeurIPS 2023!
 - *2023.06*: &nbsp;🎉🎉 Passed the oral exam!
-- *2022.09*: &nbsp;🎉🎉 Our paper "[How powerful are K-hop message passing graph neural networks](https://arxiv.org/abs/2205.13328)" is accepted to NeurIPS 2022. See you in New Orleans!
-- *2022.08*: &nbsp;🎉🎉 Our paper "[Reward delay attacks on deep reinforcement learning](https://arxiv.org/abs/2209.03540)" is accepted to GameSec 2022.
+- *2022.09*: &nbsp;🎉🎉 Our paper "[How powerful are K-hop message passing graph neural networks](https://arxiv.org/abs/2205.13328)" is accepted by NeurIPS 2022. See you in New Orleans!
+- *2022.08*: &nbsp;🎉🎉 Our paper "[Reward delay attacks on deep reinforcement learning](https://arxiv.org/abs/2209.03540)" is accepted by GameSec 2022.
 
 
-# 📝 Publications 
+# 📝 Selected Publications 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023</div><img src='images/neighborhood_tuple.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Extending the Design Space of Graph Neural Networks by Rethinking Folklore Weisfeiler-Lehman](https://arxiv.org/abs/2306.03266)
+
+**Jiarui Feng**, Lecheng Kong, Hao Liu, Dacheng Tao,Fuhai Li, Muhan Zhang, Yixin Chen \\
+<a href="https://arxiv.org/abs/2306.03266"><img src="https://img.shields.io/badge/-Paper-grey?logo=gitbook&logoColor=white" alt="Paper"></a>
+<a href="https://github.com/JiaruiFeng/N2GNN"><img src="https://img.shields.io/badge/-Github-blue?logo=github" alt="Github"></a>
+<a href="https://arxiv.org/abs/2306.03266"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=NeurIPS%2723&color=yellow"> </a>
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2022</div><img src='images/khop.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -55,9 +67,10 @@ Anindya Sarkar, **Jiarui Feng**, Yevgeniy Vorobeychik, Christopher Gill, Ning Zh
 </div>
 </div>
 
-You can browse my full publications in [Google Scholar](https://scholar.google.com/citations?user=6CSGUR8AAAAJ&hl=zh-CN)
+You can browse my full publication list in [Google Scholar](https://scholar.google.com/citations?user=6CSGUR8AAAAJ&hl=zh-CN)
 
 # 🎖 Honors and Awards
+- *2023.10* NeurIPS 2023 Travel Award.
 - *2021.07* ICIBM 2021 Travel Award. 
 
 
