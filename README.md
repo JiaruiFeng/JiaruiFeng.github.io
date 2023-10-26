@@ -5,7 +5,7 @@
 [![Linkedin Badge](https://img.shields.io/badge/-JiaruiFeng-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jiarui-feng-94ba7a189/)](https://www.linkedin.com/in/jiarui-feng-94ba7a189/) 
 [![Gmail Badge](https://img.shields.io/badge/-feng.jiarui@wustl.edu-c14438?style=flat-square&logo=Gmail&logoColor=white&link=feng.jiarui@wustl.edu)](feng.jiarui@wustl.edu)
 
-I am from China and currently a third-year Ph.D student in Computer Science and Engineering Department, Washington University in St.Louis.
+I am from China and am a third-year Ph.D. student in the Computer Science and Engineering Department, Washington University in St.Louis.
 ## 👯 Research
 * Graph Neural Network
 * Machine learning
@@ -21,7 +21,7 @@ I am from China and currently a third-year Ph.D student in Computer Science and 
 - Shiny
 - 
 ## Hello World!! 🤔
-- Crazy computer gamer: Overwatch, APEX, World of warcraft, PUBG, CS:GO...
+- Crazy computer gamer: Overwatch, APEX, World of Warcraft, PUBG, CS:GO...
 - 📫 My personal website: [Jiarui Feng](https://jiaruifeng.github.io).
 
 ![Jiarui's github stats](https://github-readme-stats.vercel.app/api?username=JiaruiFeng&hide=["issues"]&show_icons=true)
