@@ -17,7 +17,13 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I'm a third-year Ph.D. candidate in the Department of Computer Science and Engineering, Washington University in St.Louis (WashU). I'm fortunately supervised by [Dr. Yixin Chen](https://www.cse.wustl.edu/~yixin.chen/) and [Dr. Fuhai Li](https://informatics.wustl.edu/research-lab-fuhai-li/). My research focus on graph neural network and its expressive power, XAI, and their applications in precision medicine and health care. 
+I'm a third-year Ph.D. candidate in the Department of Computer Science and Engineering, Washington University in St.Louis (WashU). I'm fortunately supervised by [Dr. Yixin Chen](https://www.cse.wustl.edu/~yixin.chen/) and [Dr. Fuhai Li](https://informatics.wustl.edu/research-lab-fuhai-li/). 
+My main research area lies in solving fundamental problems in graph representation learning and graph neural networks (GNNs).  Particularly, my works focus on the following aspects:
+- Understanding and improving the expressiveness of GNNs.
+- Improving the structure learning ability of GNNs in an efficient way.
+- Design foundational GNN model for solving various tasks in graph domain.
+- The application of GNNs in precision medicine, with a particular interest in the gene interaction network discovery.
+
 
 
 # 🔥 News
@@ -97,7 +103,7 @@ You can browse my full publication list in [Google Scholar](https://scholar.goog
 - *2018.12 - 2019.02*, Credit card center, GuangZhou Bank, GuangZhou, China.
 
 # 🔬Services
-- **Conference reviewer**: CVPR23; Neurips23; ICLR24;
+- **Conference reviewer**: CVPR23; Neurips23; ICLR24; CVPR24;
 
 
 # 🎮 Misc
