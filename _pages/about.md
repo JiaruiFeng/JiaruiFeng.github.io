@@ -44,7 +44,7 @@ My main research area lies in solving fundamental problems in graph representati
 **Jiarui Feng**, Lecheng Kong, Hao Liu, Dacheng Tao, Fuhai Li, Muhan Zhang, Yixin Chen \\
 <a href="https://arxiv.org/abs/2306.03266"><img src="https://img.shields.io/badge/-Paper-grey?logo=gitbook&logoColor=white" alt="Paper"></a>
 <a href="https://github.com/JiaruiFeng/N2GNN"><img src="https://img.shields.io/badge/-Github-blue?logo=github" alt="Github"></a>
-<a href="https://arxiv.org/abs/2306.03266"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=NeurIPS%2723&color=yellow"> </a>
+<a href="https://openreview.net/forum?id=UlJcZoawgU"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=NeurIPS%2723&color=yellow"> </a>
 </div>
 </div>
 
@@ -56,7 +56,7 @@ My main research area lies in solving fundamental problems in graph representati
 Junru Zhou, **Jiarui Feng**, Xiyuan Wang, Muhan Zhang \\
 <a href="https://arxiv.org/abs/2309.04941"><img src="https://img.shields.io/badge/-Paper-grey?logo=gitbook&logoColor=white" alt="Paper"></a>
 <a href="https://github.com/zml72062/DR-FWL-2"><img src="https://img.shields.io/badge/-Github-blue?logo=github" alt="Github"></a>
-<a href="https://arxiv.org/abs/2309.04941"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=NeurIPS%2723&color=yellow"> </a>
+<a href="https://openreview.net/forum?id=94rKFkcm56"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=NeurIPS%2723&color=yellow"> </a>
 </div>
 </div>
 
@@ -68,7 +68,7 @@ Junru Zhou, **Jiarui Feng**, Xiyuan Wang, Muhan Zhang \\
 Lecheng Kong, **Jiarui Feng**, Hao Liu, Dacheng Tao, Yixin Chen, Muhan Zhang \\
 <a href="https://arxiv.org/abs/2310.19142"><img src="https://img.shields.io/badge/-Paper-grey?logo=gitbook&logoColor=white" alt="Paper"></a>
 <a href="https://github.com/LechengKong/MAG-GNN"><img src="https://img.shields.io/badge/-Github-blue?logo=github" alt="Github"></a>
-<a href="https://arxiv.org/abs/2310.19142"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=NeurIPS%2723&color=yellow"> </a>
+<a href="https://openreview.net/forum?id=K4FK7I8Jnl"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=NeurIPS%2723&color=yellow"> </a>
 </div>
 </div>
 
