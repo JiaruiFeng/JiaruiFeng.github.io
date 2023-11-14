@@ -21,7 +21,7 @@ I'm a third-year Ph.D. candidate in the Department of Computer Science and Engin
 My main research area lies in solving fundamental problems in graph representation learning and graph neural networks (GNNs).  Particularly, my works focus on the following aspects:
 - Understanding and improving the expressiveness of GNNs.
 - Improving the structure learning ability of GNNs in an efficient way.
-- Design foundational GNN model for solving various tasks in graph domain.
+- Designing foundational GNN model for solving various tasks in graph domain.
 - The application of GNNs in precision medicine, with a particular interest in the gene interaction network discovery.
 
 
