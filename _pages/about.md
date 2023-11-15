@@ -24,7 +24,7 @@ My main research area lies in solving fundamental problems in graph representati
 - Designing foundational GNN model for solving various tasks in graph domain.
 - The application of GNNs in precision medicine, with a particular interest in the gene interaction network discovery.
 
-
+You can find my [CV](https://drive.google.com/file/d/1qyCbpbZAKAz5_nVQ_9PA_YmhMRA-zybZ/view?usp=sharing) here.
 
 # 🔥 News
 - *2023.10*: We have developed a novel R Shiny application **sc2MeNetDrug** for the analysis of single-cell RNA-seq data. This application enables the identification of activated pathways, up-regulated ligands and receptors, cell-cell communication networks, and potential drugs to inhibit dysfunctional networks. Moreover, it provides user-friendly UI for easy usage! Check out our [GitHub repository](https://github.com/fuhaililab/sc2MeNetDrug) and [website](https://fuhaililab.github.io/sc2MeNetDrug/) for more details. This project is still ongoing, and we welcome any comments or suggestions!
