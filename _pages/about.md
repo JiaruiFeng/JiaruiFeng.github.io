@@ -24,12 +24,13 @@ My main research area lies in solving fundamental problems in graph representati
 - Designing foundational graph model for solving various tasks in graph domain.
 - The application of GNNs in precision medicine, with a particular interest in the gene interaction network discovery.
 
-In our recent work, we designed a graph foundation model for all classification tasks by leveraging the **large language model**. 
-
 ## I am actively looking for internship Summer 2024. You can find my [CV](https://drive.google.com/file/d/1qyCbpbZAKAz5_nVQ_9PA_YmhMRA-zybZ/view?usp=sharing) here. Feel free to chat or shoot me email for discussing potential opportunities.
 
 
 # 🔥 News
+- *2024.01*: &nbsp;🎉🎉 [COLA](https://arxiv.org/abs/2309.10376) is accepted by WWW 2024! Congratulations to Hao!
+- *2024.01*: &nbsp;🎉🎉 [OFA](https://arxiv.org/abs/2310.00149) is accepted by ICLR 2024 as a Spotlight(5%)!
+- *2024.01*: &nbsp;🎉🎉 [sc2MeNetDrug](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011785) is accepted by PLOS Computational Biology!
 - *2023.10*: We have developed a novel R Shiny application **sc2MeNetDrug** for the analysis of single-cell RNA-seq data. This application enables the identification of activated pathways, up-regulated ligands and receptors, cell-cell communication networks, and potential drugs to inhibit dysfunctional networks. Moreover, it provides user-friendly UI for easy usage! Check out our [GitHub repository](https://github.com/fuhaililab/sc2MeNetDrug) and [website](https://fuhaililab.github.io/sc2MeNetDrug/) for more details. This project is still ongoing, and we welcome any comments or suggestions!
 - *2023.10*: Leveraging the power of language and LLMs, we propose **One-for-ALL (OFA)**, which is the first general framework that can use a single graph model to address (almost) all different graph classification tasks from different domains. Check out our [preprint](https://arxiv.org/abs/2310.00149) and [code](https://github.com/LechengKong/OneForAll)!
 - *2023.09*: &nbsp;🎉🎉 [(k,t)-FWL+](https://arxiv.org/abs/2306.03266), [MAG-GNN](https://arxiv.org/pdf/2310.19142v1.pdf), and [d-DRFWL2(spotlight)](https://arxiv.org/pdf/2309.04941.pdf) are accepted by NeurIPS 2023!
@@ -39,6 +40,30 @@ In our recent work, we designed a graph foundation model for all classification 
 
 
 # 📝 Selected Publications
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2024 Spotlight</div><img src='images/OFA.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[One for All: Towards Training One Graph Model for All Classification Tasks](https://arxiv.org/abs/2310.00149)
+
+Hao Liu<sup>*</sup>, Jiarui Feng<sup>*</sup>, Lecheng Kong<sup>*</sup>, Ningyue Liang, Dacheng Tao, Yixin Chen, Muhan Zhang (<sup>*</sup> Equal contribution)\\
+<a href="https://arxiv.org/abs/2310.00149"><img src="https://img.shields.io/badge/-Paper-grey?logo=gitbook&logoColor=white" alt="Paper"></a>
+<a href="https://github.com/LechengKong/OneForAll"><img src="https://img.shields.io/badge/-Github-blue?logo=github" alt="Github"></a>
+<a href="https://openreview.net/forum?id=4IT2pgc9v6"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=ICLR%2724&color=yellow"> </a>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WWW 2024</div><img src='images/COLA.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Graph Contrastive Learning Meets Graph Meta Learning: A Unified Method for Few-shot Node Tasks](https://arxiv.org/abs/2309.10376)
+
+Hao Liu, Jiarui Feng, Lecheng Kong, Dacheng Tao, Yixin Chen, Muhan Zhang \\
+<a href="https://arxiv.org/abs/2309.10376"><img src="https://img.shields.io/badge/-Paper-grey?logo=gitbook&logoColor=white" alt="Paper"></a>
+<a href="https://github.com/Haoliu-cola/COLA/"><img src="https://img.shields.io/badge/-Github-blue?logo=github" alt="Github"></a>
+<a href="https://arxiv.org/abs/2309.10376"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=WWW%2724&color=yellow"> </a>
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023</div><img src='images/neighborhood_tuple.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -51,7 +76,7 @@ In our recent work, we designed a graph foundation model for all classification 
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023 spotlight</div><img src='images/drfwl2.png' alt="sym" width="65%" height="65%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023 Spotlight</div><img src='images/drfwl2.png' alt="sym" width="65%" height="65%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Distance-Restricted Folklore Weisfeiler-Leman GNNs with Provable Cycle Counting Power](https://arxiv.org/abs/2309.04941)
@@ -118,7 +143,7 @@ You can browse my full publication list in [Google Scholar](https://scholar.goog
 - *2018.12 - 2019.02*, Credit card center, GuangZhou Bank, GuangZhou, China.
 
 # 🔬Services
-- **Conference reviewer**: CVPR23; Neurips23; ICLR24; CVPR24;
+- **Conference reviewer**: CVPR23; NeurIPS23; ICLR24; CVPR24;
 
 
 # 🎮 Misc
