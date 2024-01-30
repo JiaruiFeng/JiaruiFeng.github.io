@@ -24,7 +24,7 @@ My main research area lies in solving fundamental problems in graph representati
 - Designing foundational graph model for solving various tasks in graph domain.
 - The application of GNNs in precision medicine, with a particular interest in the gene interaction network discovery.
 
-## I am actively looking for internship Summer 2024. You can find my [CV](https://drive.google.com/file/d/1qyCbpbZAKAz5_nVQ_9PA_YmhMRA-zybZ/view?usp=sharing) here. Feel free to chat or shoot me email for discussing potential opportunities.
+## I am actively looking for internship summer 2024. You can find my [CV](https://drive.google.com/file/d/1qyCbpbZAKAz5_nVQ_9PA_YmhMRA-zybZ/view?usp=sharing) here. Feel free to chat or shoot me email for discussing potential opportunities.
 
 
 # 🔥 News
