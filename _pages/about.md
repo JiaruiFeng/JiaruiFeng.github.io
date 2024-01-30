@@ -45,7 +45,7 @@ My main research area lies in solving fundamental problems in graph representati
 
 [One for All: Towards Training One Graph Model for All Classification Tasks](https://arxiv.org/abs/2310.00149)
 
-Hao Liu<sup>*</sup>, Jiarui Feng<sup>*</sup>, Lecheng Kong<sup>*</sup>, Ningyue Liang, Dacheng Tao, Yixin Chen, Muhan Zhang (<sup>*</sup> Equal contribution)\\
+Hao Liu<sup>*</sup>, **Jiarui Feng**<sup>*</sup>, Lecheng Kong<sup>*</sup>, Ningyue Liang, Dacheng Tao, Yixin Chen, Muhan Zhang (<sup>*</sup> Equal contribution)\\
 <a href="https://arxiv.org/abs/2310.00149"><img src="https://img.shields.io/badge/-Paper-grey?logo=gitbook&logoColor=white" alt="Paper"></a>
 <a href="https://github.com/LechengKong/OneForAll"><img src="https://img.shields.io/badge/-Github-blue?logo=github" alt="Github"></a>
 <a href="https://openreview.net/forum?id=4IT2pgc9v6"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=ICLR%2724&color=yellow"> </a>
@@ -57,7 +57,7 @@ Hao Liu<sup>*</sup>, Jiarui Feng<sup>*</sup>, Lecheng Kong<sup>*</sup>, Ningyue 
 
 [Graph Contrastive Learning Meets Graph Meta Learning: A Unified Method for Few-shot Node Tasks](https://arxiv.org/abs/2309.10376)
 
-Hao Liu, Jiarui Feng, Lecheng Kong, Dacheng Tao, Yixin Chen, Muhan Zhang \\
+Hao Liu, **Jiarui Feng**, Lecheng Kong, Dacheng Tao, Yixin Chen, Muhan Zhang \\
 <a href="https://arxiv.org/abs/2309.10376"><img src="https://img.shields.io/badge/-Paper-grey?logo=gitbook&logoColor=white" alt="Paper"></a>
 <a href="https://github.com/Haoliu-cola/COLA/"><img src="https://img.shields.io/badge/-Github-blue?logo=github" alt="Github"></a>
 <a href="https://arxiv.org/abs/2309.10376"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=WWW%2724&color=yellow"> </a>
