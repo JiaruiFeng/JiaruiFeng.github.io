@@ -48,6 +48,7 @@ Hao Liu<sup>*</sup>, **Jiarui Feng**<sup>*</sup>, Lecheng Kong<sup>*</sup>, Ning
 <a href="https://arxiv.org/abs/2310.00149"><img src="https://img.shields.io/badge/-Paper-grey?logo=gitbook&logoColor=white" alt="Paper"></a>
 <a href="https://github.com/LechengKong/OneForAll"><img src="https://img.shields.io/badge/-Github-blue?logo=github" alt="Github"></a>
 <a href="https://openreview.net/forum?id=4IT2pgc9v6"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=ICLR%2724&color=yellow"> </a>
+<a href="https://github.com/LechengKong/OneForAll"><img src="https://img.shields.io/github/stars/LechengKong/OneForAll?style=social" alt="Github"></a>
 </div>
 </div>
 
