@@ -21,13 +21,12 @@ I'm a third-year Ph.D. candidate in the Department of Computer Science and Engin
 My main research area lies in solving fundamental problems in graph representation learning and graph neural networks (GNNs).  Particularly, my works focus on the following aspects:
 - Understanding and improving the expressiveness of GNNs.
 - Improving the structure learning ability of GNNs in an efficient way.
-- Designing foundational graph model for solving various tasks in graph domain.
+- Leveraging LLMs to Design foundational graph model for solving various tasks in graph domain.
 - The application of GNNs in precision medicine, with a particular interest in the gene interaction network discovery.
-
-## I am actively looking for internship summer 2024. You can find my [CV](https://drive.google.com/file/d/1qyCbpbZAKAz5_nVQ_9PA_YmhMRA-zybZ/view?usp=sharing) here. Feel free to chat or shoot me email for discussing potential opportunities.
 
 
 # 🔥 News
+- *2024.04*: &nbsp;🎉🎉 [PathFinder](https://www.biorxiv.org/content/10.1101/2024.01.13.575534v1) is accepted by Frontiers in Cellular Neuroscience! 
 - *2024.01*: &nbsp;🎉🎉 [COLA](https://arxiv.org/abs/2309.10376) is accepted by WWW 2024! Congratulations to Hao!
 - *2024.01*: &nbsp;🎉🎉 [OFA](https://arxiv.org/abs/2310.00149) is accepted by ICLR 2024 as a Spotlight(5%)!
 - *2024.01*: &nbsp;🎉🎉 [sc2MeNetDrug](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011785) is accepted by PLOS Computational Biology!
