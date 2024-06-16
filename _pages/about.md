@@ -26,6 +26,7 @@ My main research area lies in solving fundamental problems in graph representati
 
 
 # 🔥 News
+- *2024.06*: We release [TAGLAS](https://github.com/JiaruiFeng/TAGLAS), an atlas of text-attributed graph datasets. We provide easy-to-use API for load datasets, tasks, and evaluation metrics. The project is still in development, any suggestions are wellcome.
 - *2024.04*: &nbsp;🎉🎉 [PathFinder](https://www.biorxiv.org/content/10.1101/2024.01.13.575534v1) is accepted by Frontiers in Cellular Neuroscience! 
 - *2024.01*: &nbsp;🎉🎉 [COLA](https://arxiv.org/abs/2309.10376) is accepted by WWW 2024! Congratulations to Hao!
 - *2024.01*: &nbsp;🎉🎉 [OFA](https://arxiv.org/abs/2310.00149) is accepted by ICLR 2024 as a Spotlight(5%)!
