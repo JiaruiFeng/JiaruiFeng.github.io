@@ -17,12 +17,14 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I'm a third-year Ph.D. candidate in the Department of Computer Science and Engineering, Washington University in St.Louis (WashU). I'm fortunately supervised by [Dr. Yixin Chen](https://www.cse.wustl.edu/~yixin.chen/) and [Dr. Fuhai Li](https://informatics.wustl.edu/research-lab-fuhai-li/). 
-My main research area lies in solving fundamental problems in graph representation learning and graph neural networks (GNNs).  Particularly, my works focus on the following aspects:
-- Understanding and improving the expressiveness of GNNs.
-- Improving the structure learning ability of GNNs in an efficient way.
-- Leveraging LLMs to Design foundational graph model for solving various tasks in graph domain.
-- The application of GNNs in precision medicine, with a particular interest in the gene interaction network discovery.
+I'm a Fourth-year Ph.D. candidate in the Department of Computer Science and Engineering, Washington University in St.Louis (WashU). I'm fortunately supervised by [Dr. Yixin Chen](https://www.cse.wustl.edu/~yixin.chen/) and [Dr. Fuhai Li](https://informatics.wustl.edu/research-lab-fuhai-li/). 
+My research primarily focuses on graph representation learning and graph neural networks (GNNs). Particularly, most of my research targets an ultimate goal: **To design and train a foundation model in the graph domain (GFMs) with GNNs.** Specifically, my research including:
+- Understanding and improving the **expressiveness** and **structure learning** ability of GNNs on graphs (fundamental problem before we can apply GNNs as the backbone for GFMs). 
+- Design **architecture of GFMs** and **graph prompting** mechanism to enable a single model to solve graph tasks in multiple levels (node/link/graph) and domains (citation/molecule/e-commercial).
+- Design **unified large-scale self-supervised pretrain tasks** on graph domain to enable **zero-shot** transfer ability in GFMs.
+- Collect and create large-scale graph datasets for the training of GFMs.
+
+Besides that, I am also interested in the downstream application of GNNs in precision medicine, with a particular interest in gene interaction network discovery.
 
 
 # 🔥 News
@@ -146,7 +148,7 @@ You can browse my full publication list in [Google Scholar](https://scholar.goog
 - *2018.12 - 2019.02*, Data analytics intern, Credit card center, GuangZhou Bank, GuangZhou, China.
 
 # 🔬Services
-- **Conference reviewer**: CVPR23; NeurIPS23; ICLR24; CVPR24;
+- **Conference reviewer**: CVPR23; NeurIPS23; ICLR24; CVPR24; NeurIPS24
 
 
 # 🎮 Misc
