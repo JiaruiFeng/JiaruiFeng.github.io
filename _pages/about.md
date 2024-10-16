@@ -17,17 +17,20 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I'm a Fourth-year Ph.D. candidate in the Department of Computer Science and Engineering, Washington University in St.Louis (WashU). I'm fortunately supervised by [Dr. Yixin Chen](https://www.cse.wustl.edu/~yixin.chen/) and [Dr. Fuhai Li](https://informatics.wustl.edu/research-lab-fuhai-li/). 
-My research primarily focuses on graph representation learning and graph neural networks (GNNs). Particularly, most of my research targets an ultimate goal: **To design and train a foundation model in the graph domain (GFMs) with GNNs.** Specifically, my research including:
-- Understanding and improving the **expressiveness** and **structure learning** ability of GNNs on graphs (fundamental problem before we can apply GNNs as the backbone for GFMs). 
-- Design **architecture of GFMs** and **graph prompting** mechanism to enable a single model to solve graph tasks in multiple levels (node/link/graph) and domains (citation/molecule/e-commercial).
-- Design **unified large-scale self-supervised pretrain tasks** on graph domain to enable **zero-shot** transfer ability in GFMs.
+I'm a Fourth-year Ph.D. candidate in the Department of Computer Science and Engineering, Washington University in St.Louis (WashU). I'm fortunately supervised by [Dr. Yixin Chen](https://www.cse.wustl.edu/~yixin.chen/) and also closely work with [Dr. Fuhai Li](https://informatics.wustl.edu/research-lab-fuhai-li/). 
+My research primarily focuses on graph representation learning. Particularly, most of my research targets an ultimate goal: to design and train a **graph foundation model (GFMs)** with **graph neural networks (GNNs)**. Specifically:
+
+- Understanding and improving the **expressiveness** and **structure learning** ability of GNNs on graphs. 
+- **Integrate GNNs with LLMs** to design the architecture of GFMs and enable a single model to solve graph tasks in multiple levels (node/link/graph) and domains (citation/molecule/e-commercial). 
+- Design unified self-supervised pre-training tasks and graph prompting mechanism on graph domain to enable zero-shot transfer ability in GFMs.
 - Collect and create large-scale graph datasets for the training of GFMs.
 
-Besides that, I am also interested in the downstream application of GNNs in precision medicine, with a particular interest in gene interaction network discovery.
+Besides that, I am also interested in the downstream application of GNNs in various domains like **recommendation, precision medicine, planning, and reasoning**. 
 
+## I am actively looking for research internship in summer 2025. If you are interested in my work, feel free to chat or shoot me email for discussing any potential opportunities.
 
 # 🔥 News
+- *2024.09*: [GNN4Planning](https://arxiv.org/pdf/2405.19119) is accepted by NeurIPS 2024, Congratulations to Xixi and Yifei.
 - *2024.08*: Check out our newest work on joint modeling of graph and language ([paper](https://arxiv.org/abs/2407.09709),[code](https://github.com/JiaruiFeng/GOFA)). In this work, we propose GOFA, which interleave GNN layers into LLMs to enable LLM with the ability to reason on graph. We also design multiple novel large-scale unsupervised pretraining tasks for GOFA. GOFA achieves SOTA results across multiple benchmarking datasets!    
 - *2024.06*: We release [TAGLAS](https://github.com/JiaruiFeng/TAGLAS), an atlas of text-attributed graph datasets. We provide easy-to-use APIs for loading datasets, tasks, and evaluation metrics. The technical report is available in [arxiv](https://arxiv.org/abs/2406.14683). The project is still in development, any suggestions are welcome.
 - *2024.04*: &nbsp;🎉🎉 [PathFinder](https://www.biorxiv.org/content/10.1101/2024.01.13.575534v1) is accepted by Frontiers in Cellular Neuroscience! 
