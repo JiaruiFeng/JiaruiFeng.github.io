@@ -30,7 +30,7 @@ Besides that, I am also interested in the downstream application of GNNs in vari
 ## I am actively looking for research internship in summer 2025. If you are interested in my work, feel free to chat or shoot me email for discussing any potential opportunities.
 
 # 🔥 News
-- *2024.09*: [GNN4Planning](https://arxiv.org/pdf/2405.19119) is accepted by NeurIPS 2024, Congratulations to Xixi and Yifei.
+- *2024.09*: [GNN4Planning](https://arxiv.org/pdf/2405.19119) is accepted by NeurIPS 2024, Congratulations to Xixi and Yifei!
 - *2024.08*: Check out our newest work on joint modeling of graph and language ([paper](https://arxiv.org/abs/2407.09709),[code](https://github.com/JiaruiFeng/GOFA)). In this work, we propose GOFA, which interleave GNN layers into LLMs to enable LLM with the ability to reason on graph. We also design multiple novel large-scale unsupervised pretraining tasks for GOFA. GOFA achieves SOTA results across multiple benchmarking datasets!    
 - *2024.06*: We release [TAGLAS](https://github.com/JiaruiFeng/TAGLAS), an atlas of text-attributed graph datasets. We provide easy-to-use APIs for loading datasets, tasks, and evaluation metrics. The technical report is available in [arxiv](https://arxiv.org/abs/2406.14683). The project is still in development, any suggestions are welcome.
 - *2024.04*: &nbsp;🎉🎉 [PathFinder](https://www.biorxiv.org/content/10.1101/2024.01.13.575534v1) is accepted by Frontiers in Cellular Neuroscience! 
