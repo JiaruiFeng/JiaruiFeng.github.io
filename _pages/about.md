@@ -30,6 +30,7 @@ Besides that, I am also interested in the downstream application of GNNs in vari
 ## I am actively looking for research internship in summer 2025. If you are interested in my work, feel free to chat or shoot me email for discussing any potential opportunities.
 
 # 🔥 News
+- *2025.01*: [GOFA](https://arxiv.org/abs/2407.09709) is accepted by ICLR 2025!
 - *2024.09*: [GNN4TaskPlan](https://arxiv.org/pdf/2405.19119) is accepted by NeurIPS 2024, Congratulations to Xixi and Yifei!
 - *2024.08*: Check out our newest work on joint modeling of graph and language ([paper](https://arxiv.org/abs/2407.09709),[code](https://github.com/JiaruiFeng/GOFA)). In this work, we propose GOFA, which interleave GNN layers into LLMs to enable LLM with the ability to reason on graph. We also design multiple novel large-scale unsupervised pretraining tasks for GOFA. GOFA achieves SOTA results across multiple benchmarking datasets!    
 - *2024.06*: We release [TAGLAS](https://github.com/JiaruiFeng/TAGLAS), an atlas of text-attributed graph datasets. We provide easy-to-use APIs for loading datasets, tasks, and evaluation metrics. The technical report is available in [arxiv](https://arxiv.org/abs/2406.14683). The project is still in development, any suggestions are welcome.
@@ -46,6 +47,19 @@ Besides that, I am also interested in the downstream application of GNNs in vari
 
 
 # 📝 Selected Publications
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025/div><img src='images/GOFA.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[GOFA: A Generative One-For-All Model for Joint Graph Language Modeling](https://arxiv.org/abs/2407.09709)
+
+Lecheng Kong<sup>*</sup>, **Jiarui Feng**<sup>*</sup>, Hao Liu<sup>*</sup>, Chengsong Huang, Jiaxin Huang, Yixin Chen, Muhan Zhang (<sup>*</sup> Equal contribution)\\
+<a href="https://arxiv.org/abs/2407.09709"><img src="https://img.shields.io/badge/-Paper-grey?logo=gitbook&logoColor=white" alt="Paper"></a>
+<a href="https://github.com/JiaruiFeng/GOFA"><img src="https://img.shields.io/badge/-Github-blue?logo=github" alt="Github"></a>
+<a href="https://openreview.net/forum?id=mIjblC9hfm"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=ICLR%2724&color=yellow"> </a>
+<a href="https://github.com/JiaruiFeng/GOFA"><img src="https://img.shields.io/github/stars/JiaruiFeng/GOFA?style=social" alt="Github"></a>
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2024 Spotlight</div><img src='images/OFA.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
