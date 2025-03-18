@@ -55,7 +55,7 @@ Besides that, I am also interested in the downstream application of GNNs in vari
 Lecheng Kong<sup>*</sup>, **Jiarui Feng**<sup>*</sup>, Hao Liu<sup>*</sup>, Chengsong Huang, Jiaxin Huang, Yixin Chen, Muhan Zhang (<sup>*</sup> Equal contribution)\\
 <a href="https://arxiv.org/abs/2407.09709"><img src="https://img.shields.io/badge/-Paper-grey?logo=gitbook&logoColor=white" alt="Paper"></a>
 <a href="https://github.com/JiaruiFeng/GOFA"><img src="https://img.shields.io/badge/-Github-blue?logo=github" alt="Github"></a>
-<a href="https://openreview.net/forum?id=mIjblC9hfm"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=ICLR%2724&color=yellow"> </a>
+<a href="https://openreview.net/forum?id=mIjblC9hfm"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=ICLR%2725&color=yellow"> </a>
 <a href="https://github.com/JiaruiFeng/GOFA"><img src="https://img.shields.io/github/stars/JiaruiFeng/GOFA?style=social" alt="Github"></a>
 </div>
 </div>
