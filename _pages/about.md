@@ -47,7 +47,7 @@ Besides that, I am also interested in the downstream application of GNNs in vari
 
 
 # 📝 Selected Publications
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025/div><img src='images/GOFA.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/GOFA.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [GOFA: A Generative One-For-All Model for Joint Graph Language Modeling](https://arxiv.org/abs/2407.09709)
