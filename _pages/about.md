@@ -27,7 +27,7 @@ My research primarily focuses on graph representation learning. Particularly, mo
 
 Besides that, I am also interested in the downstream application of GNNs in various domains like **recommendation, precision medicine, planning, and reasoning**. 
 
-## I am actively looking for research internship in summer 2025. If you are interested in my work, feel free to chat or shoot me email for discussing any potential opportunities.
+## I am actively looking for full-time research scientist position in summer 2026. If you are interested in my work, feel free to chat or shoot me email for discussing any potential opportunities.
 
 # 🔥 News
 - *2025.01*: [GOFA](https://arxiv.org/abs/2407.09709) is accepted by ICLR 2025!
