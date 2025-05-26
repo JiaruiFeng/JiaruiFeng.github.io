@@ -160,6 +160,7 @@ You can browse my full publication list in [Google Scholar](https://scholar.goog
 
 
 # 💻 Internships
+- *2025.05 - Present* Research intern, Meta, Menlo Park, US. 
 - *2024.06 - 2024.09* Lab research intern, Pinterest, Remote, US. 
 - *2019.06 - 2019.08*, SWE intern, Alibaba Cloud, HangZhou, China.
 - *2018.12 - 2019.02*, Data analytics intern, Credit card center, GuangZhou Bank, GuangZhou, China.
