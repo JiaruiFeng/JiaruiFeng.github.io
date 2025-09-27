@@ -162,7 +162,7 @@ You can browse my full publication list in [Google Scholar](https://scholar.goog
 
 
 # 💻 Internships
-- *2025.09 - Present* Student Research, Meta, Remote, US.
+- *2025.09 - Present* Student Researcher, Meta, Remote, US.
 - *2025.05 - 2025.08* Research intern, Meta, Menlo Park, US. 
 - *2024.06 - 2024.09* Lab research intern, Pinterest, Remote, US. 
 - *2019.06 - 2019.08*, SWE intern, Alibaba Cloud, HangZhou, China.
