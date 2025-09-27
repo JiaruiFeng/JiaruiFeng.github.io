@@ -17,19 +17,21 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I'm a Fourth-year Ph.D. candidate in the Department of Computer Science and Engineering, Washington University in St.Louis (WashU). I'm fortunately supervised by [Dr. Yixin Chen](https://www.cse.wustl.edu/~yixin.chen/) and also closely work with [Dr. Fuhai Li](https://informatics.wustl.edu/research-lab-fuhai-li/). 
-My research primarily focuses on graph representation learning. Particularly, most of my research targets an ultimate goal: to design and train a **graph foundation model (GFMs)** with **graph neural networks (GNNs)**. Specifically:
+I'm a Fifth-year Ph.D. candidate in the Department of Computer Science and Engineering, Washington University in St.Louis (WashU). I'm fortunately supervised by [Dr. Yixin Chen](https://www.cse.wustl.edu/~yixin.chen/) and also closely work with [Dr. Fuhai Li](https://informatics.wustl.edu/research-lab-fuhai-li/). 
+My research areas span **Graph Neural Networks (GNNs)**, **large language models (LLMs)**, and their synergies. Specifically, my research includes:
 
-- Understanding and improving the **expressiveness** and **structure learning** ability of GNNs on graphs. 
-- **Integrate GNNs with LLMs** to design the architecture of GFMs and enable a single model to solve graph tasks in multiple levels (node/link/graph) and domains (citation/molecule/e-commercial). 
-- Design unified self-supervised pre-training tasks and graph prompting mechanism on graph domain to enable zero-shot transfer ability in GFMs.
-- Collect and create large-scale graph datasets for the training of GFMs.
+- Understanding and improving the expressiveness and structure-learning capabilities of GNNs. 
+- **Integrating GNNs with LLMs to design graph foundation models (GFMs)**. Focus on both architecture, training task, and prompting mechanism design to enable cross-domain zero-shot learning on graph tasks.
+- Designing **test-time training techniques** to strengthen the reasoning capabilities of LLMs on graphs.
+- Enhancing the expressiveness of **Mixture-of-Experts (MoE) models** by introducing structural relationship into experts. 
 
-Besides that, I am also interested in the downstream application of GNNs in various domains like **recommendation, precision medicine, planning, and reasoning**. 
+In addition, I am interested in applying graph learning and LLMs to domains such as **recommendation, precision medicine, planning, and reasoning**.
 
-## I am actively looking for full-time research scientist position in summer 2026. If you are interested in my work, feel free to chat or shoot me email for discussing any potential opportunities.
+## I am actively looking for full-time research scientist position start at summer 2026. Feel free to chat or shoot me email for discussing any potential opportunities.
 
 # 🔥 News
+- *2025.07*: [GRIP](https://openreview.net/forum?id=WacW4lC4du) is accepted by PUT at ICML 2025!
+- *2025.04*: Passed the Ph.D proposal!
 - *2025.01*: [GOFA](https://arxiv.org/abs/2407.09709) is accepted by ICLR 2025!
 - *2024.09*: [GNN4TaskPlan](https://arxiv.org/pdf/2405.19119) is accepted by NeurIPS 2024, Congratulations to Xixi and Yifei!
 - *2024.08*: Check out our newest work on joint modeling of graph and language ([paper](https://arxiv.org/abs/2407.09709),[code](https://github.com/JiaruiFeng/GOFA)). In this work, we propose GOFA, which interleave GNN layers into LLMs to enable LLM with the ability to reason on graph. We also design multiple novel large-scale unsupervised pretraining tasks for GOFA. GOFA achieves SOTA results across multiple benchmarking datasets!    
@@ -160,13 +162,14 @@ You can browse my full publication list in [Google Scholar](https://scholar.goog
 
 
 # 💻 Internships
-- *2025.05 - Present* Research intern, Meta, Menlo Park, US. 
+- *2025.09 - Present* Student Research, Meta, Remote, US.
+- *2025.05 - 2025.08* Research intern, Meta, Menlo Park, US. 
 - *2024.06 - 2024.09* Lab research intern, Pinterest, Remote, US. 
 - *2019.06 - 2019.08*, SWE intern, Alibaba Cloud, HangZhou, China.
 - *2018.12 - 2019.02*, Data analytics intern, Credit card center, GuangZhou Bank, GuangZhou, China.
 
 # 🔬Services
-- **Conference reviewer**: CVPR23; NeurIPS23; ICLR24; CVPR24; NeurIPS24; ICLR25; ICML25; CVPR25; NeurIPS25.
+- **Conference reviewer**: CVPR23; NeurIPS23; ICLR24; CVPR24; NeurIPS24; ICLR25; ICML25; CVPR25; NeurIPS25; ICLR26.
 
 
 # 🎮 Misc
