@@ -1,10 +1,9 @@
 name: Get Citation Data
 
+# Disabled: the citation badge was removed from the site, so this only runs
+# on demand. Re-add the `schedule` trigger when the badge is restored.
 on:
   workflow_dispatch:
-  page_build:
-  schedule:
-    - cron: '0 8 * * *'
 
 permissions:
   contents: write

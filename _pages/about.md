@@ -8,13 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
-
 <span class='anchor' id='about-me'></span>
 
 I'm currently a Research Scientist at Meta MRS. Prior to that, I received my Ph.D. from the Department of Computer Science and Engineering, Washington University in St. Louis (WashU), where I was fortunately supervised by [Dr. Yixin Chen](https://www.cse.wustl.edu/~yixin.chen/) and also worked closely with [Dr. Fuhai Li](https://engineering.washu.edu/faculty/Fuhai-Li.html). 
@@ -26,14 +19,12 @@ My research spans **Graph Neural Networks (GNNs)**, **Large Language Models (LLM
 - **Scaling Mixture-of-Experts (MoE)** --- improving the quality and efficiency of sparsely activated models at scale. 
 - **Diffusion models for sequential data** --- analyzing discrete and continuous diffusion models on language and recommendation data, and building large-scale generative recommenders based on masked diffusion.
 
-<a href="https://scholar.google.com/citations?user=6CSGUR8AAAAJ"><img src="https://img.shields.io/endpoint?url={{ url }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations" alt="Google Scholar citations"></a>
-
 # 🔥 News
 - *2026.09*: &nbsp;🎉🎉 [TabDLM](https://arxiv.org/abs/2602.22586) is accepted by NeurIPS 2026! Congratulations to Donghong!
 - *2026.08*: &nbsp;🎉🎉 [ReMix](https://arxiv.org/abs/2603.10160) is accepted by COLM 2026! Congratulations to Ruizhong!
 - *2026.05*: &nbsp;🎉🎉 [GRIP](https://dl.acm.org/doi/abs/10.1145/3770855.3817895) is accepted by KDD 2026, research track!
 - *2026.04*: &nbsp;🎉🎉 [DAG-MoE](https://arxiv.org/abs/2606.01062) is accepted by ICML 2026!
-- *2026.04*: Glad to share that I officially joined Meta MRS as a Research Scientist!
+- *2026.04*: &nbsp;🎉🎉 Joined Meta MRS as a Research Scientist!
 - *2026.02*: &nbsp;🎉🎉 Successfully passed the Ph.D. thesis defense!
 - *2025.07*: &nbsp;🎉🎉 [GRIP](https://openreview.net/forum?id=WacW4lC4du) is accepted by PUT at ICML 2025!
 - *2025.04*: &nbsp;🎉🎉 Passed the Ph.D. proposal!
@@ -182,7 +173,7 @@ Anindya Sarkar, **Jiarui Feng**, Yevgeniy Vorobeychik, Christopher Gill, Ning Zh
 </div>
 </div>
 
-You can browse my full publication list on <a href="https://scholar.google.com/citations?user=6CSGUR8AAAAJ">Google Scholar</a><span id="total_cit_wrapper" style="display:none"> (total citations: <strong><span id="total_cit"></span></strong>)</span>.
+You can browse my full publication list on [Google Scholar](https://scholar.google.com/citations?user=6CSGUR8AAAAJ).
 
 # 🎖 Honors and Awards
 - *2023.10*: NeurIPS 2023 Travel Award.
