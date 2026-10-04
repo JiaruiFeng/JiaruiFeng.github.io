@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Jiarui Feng"
-description              : ""
+description              :
 repository               : "JiaruiFeng/JiaruiFeng.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,12 +23,12 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Jiarui Feng (冯家瑞)"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "Fifth-year PhD candidate in Washington University in St. Louis."
-  location         : "St. Louis, MO"
+  bio              : "Research Scientist at Meta MRS."
+  location         : "Menlo Park, CA"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=6CSGUR8AAAAJ"
-  email            : "feng.jiarui@wustl.edu"
+  email            : "jiaruifeng@meta.com"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -136,7 +136,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
